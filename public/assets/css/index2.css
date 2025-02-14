@@ -1,0 +1,58 @@
+/*.VIpgJd-ZVi9od-ORHb {*/
+/*    display: none !important;*/
+/*}*/
+/*.VIpgJd-ZVi9od-ORHb-OEVmcd{*/
+/*    display: none !important;*/
+
+/*}*/
+
+/*.goog-te-banner-frame {*/
+/*    display: none;*/
+/*}*/
+
+/*#goog-gt-tt {*/
+/*    display: none !important;*/
+/*    visibility: hidden !important;*/
+/*}*/
+/*.goog-te-banner-frame.skiptranslate {*/
+/*    display: none !important;*/
+/*}*/
+#google_translate_element {
+    position: relative;
+    z-index: 99999;
+}
+
+.goog-te-gadget-simple {
+    background-color: #007bff !important; /* لون الزر الأساسي */
+    border: none !important; /* إزالة الحدود */
+    padding: 10px 15px !important; /* توسيع المساحة الداخلية */
+    border-radius: 25px !important;
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+    display: inline-block;
+    cursor: pointer;
+    color: white !important;
+    text-align: center;
+}
+
+.goog-te-menu-value {
+    color: white !important; /* لون النص */
+    font-weight: bold;
+}
+
+.goog-te-menu-value span:nth-child(5) {
+    display: none;
+}
+
+.goog-te-menu-value span:nth-child(3) {
+    border: none !important;
+}
+
+.goog-te-gadget {
+    font-family: Roboto, 'Open Sans', sans-serif !important;
+    text-transform: uppercase;
+}
+
+.goog-te-gadget-simple:hover {
+    background-color: #0056b3 !important; /* تغيير لون الخلفية عند التمرير فوقه */
+}

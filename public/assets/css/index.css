@@ -1,0 +1,11 @@
+select , input , button {
+    height: 40px;
+    outline: none;
+    border-radius: 5px;
+}
+.bg-blue{
+    background-color: #045cb4;
+}
+.vh-110{
+    height: 110vh;
+}
