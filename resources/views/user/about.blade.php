@@ -160,86 +160,20 @@
                 <p class="wow fadeInUp" data-wow-delay=".5s">Aliquam viverra accumsan lectus in dignissim ante interdum eu Sed odio massa</p>
             </div>
             <div class="row">
+            @foreach ($members as $member)
                 <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                     <div class="team-card-item">
                         <div class="team-image">
-                            <img src="assets/img/team/01.jpg" alt="img">
+                            <img src="{{ asset('images/team_members/'.$member->image) }}" alt="img">
                         </div>
                         <div class="team-content bg-cover" style="background-image: url('assets/img/team/team-shape.png');">
-                           <h5><a href="team-details.html">Darlene Robertson</a></h5>
-                           <p>Web Designer</p>
-                            <div class="social-profile">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                </ul>
-                                <span class="plus-btn"><i class="fa-light fa-share-nodes"></i></span>
-                            </div>
+                           <h5><a href="team-details.html">{{ $member->name }}</a></h5>
+                           <p>{{ $member->job }}</p>
+                            
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                    <div class="team-card-item">
-                        <div class="team-image">
-                            <img src="assets/img/team/02.jpg" alt="img">
-                        </div>
-                        <div class="team-content bg-cover" style="background-image: url('assets/img/team/team-shape.png');">
-                           <h5><a href="team-details.html">Leslie Alexander</a></h5>
-                           <p>Nursing Assistant</p>
-                            <div class="social-profile">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                </ul>
-                                <span class="plus-btn"><i class="fa-light fa-share-nodes"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                    <div class="team-card-item">
-                        <div class="team-image">
-                            <img src="assets/img/team/03.jpg" alt="img">
-                        </div>
-                        <div class="team-content bg-cover" style="background-image: url('assets/img/team/team-shape.png');">
-                           <h5><a href="team-details.html">Ralph Edwards</a></h5>
-                           <p>President of Sales</p>
-                            <div class="social-profile">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                </ul>
-                                <span class="plus-btn"><i class="fa-light fa-share-nodes"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                    <div class="team-card-item">
-                        <div class="team-image">
-                            <img src="assets/img/team/04.jpg" alt="img">
-                        </div>
-                        <div class="team-content bg-cover" style="background-image: url('assets/img/team/team-shape.png');">
-                           <h5><a href="team-details.html">Kristin Watson</a></h5>
-                           <p>Software Tester</p>
-                            <div class="social-profile">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                </ul>
-                                <span class="plus-btn"><i class="fa-light fa-share-nodes"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            @endforeach
             </div>
         </div>
     </section>
@@ -327,6 +261,7 @@
             </div>
             <div class="swiper testimonial-slider">
                 <div class="swiper-wrapper">
+                @foreach ($testmonials as $testmonial)
                     <div class="swiper-slide">
                         <div class="testimonial-card-items-2">
                             <div class="icon">
@@ -335,79 +270,29 @@
                             <div class="client-info">
                                 <div class="client-img bg-cover" style="background-image: url('assets/img/testimonial/client-5.jpg');"></div>
                                 <div class="content">
-                                    <h4>Ronald Richards</h4>
-                                    <span>Web Designer</span>
+                                    <h4>{{ $testmonials->name }}</h4>
+                                    <span>{{ $testmonials->job_title }}</span>
                                 </div>
                             </div>
                             <p>
-                                Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at pharetra turpis accumsan et etiam eu sollicitudin eros. In imperdiet accumsan felis sed.
+                                {{ $testmonials->testmonial }}
                             </p>
                             <div class="client-bottom">
                                 <div class="star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
+                                    @for ($i = 1; $i <= 5; $i++)
+                                        @if ($i <= $testmonial->rating)
+                                            <i class="fa-solid fa-star"></i>
+                                        @else
+                                            <i class="fa-regular fa-star"></i>
+                                        @endif
+                                    @endfor
                                 </div>
-                                <img src="assets/img/testimonial/wpbeginner-dark.png" alt="img">
+
+                                <img src="{{ asset('storage/'.$testmonial->image) }}" alt="img">
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-card-items-2">
-                            <div class="icon">
-                                <i class="fa-solid fa-quote-right"></i>
-                            </div>
-                            <div class="client-info">
-                                <div class="client-img bg-cover" style="background-image: url('assets/img/testimonial/client-6.jpg');"></div>
-                                <div class="content">
-                                    <h4>Esther Howard</h4>
-                                    <span>President of Sales</span>
-                                </div>
-                            </div>
-                            <p>
-                                Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at pharetra turpis accumsan et etiam eu sollicitudin eros. In imperdiet accumsan felis sed.
-                            </p>
-                            <div class="client-bottom">
-                                <div class="star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <img src="assets/img/testimonial/hostadvice-dark.png" alt="img">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-card-items-2">
-                            <div class="icon">
-                                <i class="fa-solid fa-quote-right"></i>
-                            </div>
-                            <div class="client-info">
-                                <div class="client-img bg-cover" style="background-image: url('assets/img/testimonial/client-7.jpg');"></div>
-                                <div class="content">
-                                    <h4>Courtney Henry</h4>
-                                    <span>Nursing Assistant</span>
-                                </div>
-                            </div>
-                            <p>
-                                Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at pharetra turpis accumsan et etiam eu sollicitudin eros. In imperdiet accumsan felis sed.
-                            </p>
-                            <div class="client-bottom">
-                                <div class="star">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <img src="assets/img/testimonial/capterra.png" alt="img">
-                            </div>
-                        </div>
-                    </div>
+                @endforeach
                 </div>
             </div>
             <div class="testimonial-click-text wow fadeInUp" data-wow-delay=".3s">

@@ -119,7 +119,9 @@ Route::get('/Error404', function () {
     return view('user.404');
 })->name('Error404');
 Route::get('/about', function () {
-    return view('user.about');
+    $members = \App\Models\TeamMember::all();
+    $testmonials = \App\Models\ClientTestmonial::all();
+    return view('user.about',compact('members','testmonials'));
 })->name('about');
 Route::get('/affiliate', function () {
     return view('user.affiliate');
