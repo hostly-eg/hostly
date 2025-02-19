@@ -262,174 +262,42 @@
                             </div>
                         </div>
                         <ul>
-                            <li>
-                                cPanel Accounts
-                            </li>
-                            <li>
-                                Disk Space
-                            </li>
-                            <li>
-                                Bandwidth (Traffic)
-                            </li>
-                            <li>
-                                CPU Cores(per cPanel account)
-                            </li>
-                            <li>
-                                RAM(per cPanel account)
-                            </li>
-                            <li>
-                                Hosting type
-                            </li>
-                            <li>
-                                Multisite ready
-                            </li>
-                            <li>
-                                PHP 7 ready
-                            </li>
-                            <li>
-                                Money-Back Guarantee
-                            </li>
+                            @foreach ($affilateFields as $affilateField)
+                                <li>
+                                    {{ $affilateField->name }}
+                                </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
+                @foreach ($affilates as $affilate)
                 <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                     <div class="affiliate-card-items">
-                        <h6 class="top-text">Regular Plans</h6>
+                        <h6 class="top-text">{{ $affilate->name }}</h6>
                         <div class="pricing-header">
                             <div class="price-list">
-                                <del>120.99</del>
-                                <span>SAVE 75%</span>
+                                <del>{{ $affilate->price }}</del>
                             </div>
-                            <h2>$99 <sub>/mo</sub></h2>
                             <p class="text-center">
-                                Lnteger sapien nec sapien sollicitudin ultrices Cras tempor id lorem et
+                                {{ $affilate->description }}
                             </p>
                             <a href="contact.html" class="theme-btn">get Started Now  <i class="fas fa-long-arrow-alt-right"></i>
                             </a>
                         </div>
                         <ul class="text-center">
-                            <li>
-                                50
-                            </li>
-                            <li>
-                                40 GB
-                            </li>
-                            <li>
-                                4 tB
-                            </li>
-                            <li>
-                                2
-                            </li>
-                            <li>
-                                3 BG
-                            </li>
-                            <li>
-                                Shared
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-check"></i>
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-check"></i>
-                            </li>
-                            <li>
-                                28 DAY
-                            </li>
+                            @foreach ($affilateFields as $affilateField)
+                                <li>
+                                    @if ($affilateField->type == 'checkbox')
+                                        $affilate->fields[$affilateField->id] == 1 ? <i class="fa-regular fa-check"></i> : <i class="fa-regular fa-xmark"></i>
+                                    @else
+                                        {{ $affilate->fields_rendered[$affilateField->id]['value'] }}
+                                    @endif
+                                </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
-                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                    <div class="affiliate-card-items active">
-                        <h6 class="top-text">Premium plans</h6>
-                        <div class="pricing-header">
-                            <div class="price-list">
-                                <del>120.99</del>
-                                <span>SAVE 75%</span>
-                            </div>
-                            <h2>$69 <sub>/mo</sub></h2>
-                            <p class="text-center">
-                                Lnteger sapien nec sapien sollicitudin ultrices Cras tempor id lorem et
-                            </p>
-                            <a href="contact.html" class="theme-btn">get Started Now  <i class="fas fa-long-arrow-alt-right"></i>
-                            </a>
-                        </div>
-                        <ul class="text-center">
-                            <li>
-                                90
-                            </li>
-                            <li>
-                                80 GB
-                            </li>
-                            <li>
-                                6 TB
-                            </li>
-                            <li>
-                                2
-                            </li>
-                            <li>
-                                3 BG
-                            </li>
-                            <li>
-                                Shared
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-check"></i>
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-check"></i>
-                            </li>
-                            <li>
-                                28 DAY
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                    <div class="affiliate-card-items">
-                        <h6 class="top-text">Business</h6>
-                        <div class="pricing-header">
-                            <div class="price-list">
-                                <del>120.99</del>
-                                <span>SAVE 75%</span>
-                            </div>
-                            <h2>$39 <sub>/mo</sub></h2>
-                            <p class="text-center">
-                                Lnteger sapien nec sapien sollicitudin ultrices Cras tempor id lorem et
-                            </p>
-                            <a href="contact.html" class="theme-btn">get Started Now  <i class="fas fa-long-arrow-alt-right"></i>
-                            </a>
-                        </div>
-                        <ul class="text-center">
-                            <li>
-                                110
-                            </li>
-                            <li>
-                                150 GB
-                            </li>
-                            <li>
-                                8 TB
-                            </li>
-                            <li>
-                                2
-                            </li>
-                            <li>
-                                3 BG
-                            </li>
-                            <li>
-                                Shared
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-check"></i>
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-check"></i>
-                            </li>
-                            <li>
-                                28 DAY
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>

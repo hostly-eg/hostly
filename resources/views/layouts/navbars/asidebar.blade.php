@@ -438,6 +438,64 @@
                         </li>
                     </ul>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ (Str::contains(Request::path(), 'affilate_fields') ? 'active' : '') }}" data-bs-toggle="collapse" href="#affilate_fields" role="button" aria-expanded="false" aria-controls="affilate_fields">
+                        <i class="icon">
+                            <svg class="icon-10" xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
+                                <g>
+                                    <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                </g>
+                            </svg>
+                        </i>
+                        <span class="item-name">Affilate Fields</span>
+                        <i class="right-icon">
+                            <svg class="icon-18" xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </i>
+                    </a>
+                    <ul class="sub-nav collapse {{ Str::contains(Request::path(), 'affilate_fields') ? 'show' : '' }}" id="affilate_fields" data-bs-parent="#sidebar-menu">
+                        <li class="nav-item">
+                            <a class="nav-link {{ (Str::contains(Request::path(), 'affilate_fields') ? 'active' : '') }}" href="{{route('affilate_fields')}}">
+                                <span class="item-name">Affilate Fields</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ (Str::contains(Request::path(), 'new_affilate_field') ? 'active' : '') }}" href="{{route('new_affilate_field')}}">
+                                <span class="item-name">New Affilate Field</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ (Str::contains(Request::path(), 'affilate') ? 'active' : '') }}" data-bs-toggle="collapse" href="#affilate" role="button" aria-expanded="false" aria-controls="affilate">
+                        <i class="icon">
+                            <svg class="icon-10" xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
+                                <g>
+                                    <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                </g>
+                            </svg>
+                        </i>
+                        <span class="item-name">Affilate</span>
+                        <i class="right-icon">
+                            <svg class="icon-18" xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </i>
+                    </a>
+                    <ul class="sub-nav collapse {{ Str::contains(Request::path(), 'affilates') ? 'show' : '' }}" id="affilate" data-bs-parent="#sidebar-menu">
+                        <li class="nav-item">
+                            <a class="nav-link {{ (Str::contains(Request::path(), 'affilates') ? 'active' : '') }}" href="{{route('affilates')}}">
+                                <span class="item-name">Affilate</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ (Str::contains(Request::path(), 'new_affilate') ? 'active' : '') }}" href="{{route('new_affilate')}}">
+                                <span class="item-name">New Affilate</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
             <!-- Sidebar Menu End -->      
         </div>

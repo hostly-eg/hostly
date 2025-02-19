@@ -22,6 +22,8 @@ use App\Http\Controllers\HostingPageController;
 use App\Http\Controllers\TeamMemberController;
 use App\Http\Controllers\ContactRequestController;
 use App\Http\Controllers\FaqController;
+use App\Http\Controllers\Admin\AffilateFieldController;
+use App\Http\Controllers\Admin\AffilateController;
 Route::group(['middleware' => 'admin'], function () {
     Route::get('/dashboard', [Dashboard::class, 'dashboard'])->name('dashboard');
     Route::get('/contact_requests', [ContactRequestController::class, 'index'])->name('contact_requests');
@@ -63,6 +65,20 @@ Route::group(['middleware' => 'admin'], function () {
     Route::put('/update_team_member/{id}', [TeamMemberController::class, 'update'])->name('update_team_member');
     Route::get('/delete_team_member/{id}', [TeamMemberController::class, 'destroy'])->name('delete_team_member');
     Route::get('/team_member_image/{image}', [TeamMemberController::class, 'image'])->name('team_member_image');
+    //manage-affilate-fields
+    Route::get('/affilate-fields', [AffilateFieldController::class, 'index'])->name('affilate_fields');
+    Route::get('/new-affilate-field', [AffilateFieldController::class, 'create'])->name('new_affilate_field');
+    Route::post('/store_affilate_field', [AffilateFieldController::class, 'store'])->name('store_affilate_field');
+    Route::get('/edit-affilate_field/{id}', [AffilateFieldController::class, 'edit'])->name('edit_affilate_field');
+    Route::put('/update_affilate_field/{id}', [AffilateFieldController::class, 'update'])->name('update_affilate_field');
+    Route::get('/delete_affilate_field/{id}', [AffilateFieldController::class, 'destroy'])->name('delete_affilate_field');
+    //manage-affilate
+    Route::get('/affilates', [AffilateController::class, 'index'])->name('affilates');
+    Route::get('/new-affilate', [AffilateController::class, 'create'])->name('new_affilate');
+    Route::post('/store_affilate', [AffilateController::class, 'store'])->name('store_affilate');
+    Route::get('/edit-affilate/{id}', [AffilateController::class, 'edit'])->name('edit_affilate');
+    Route::put('/update_affilate/{id}', [AffilateController::class, 'update'])->name('update_affilate');
+    Route::get('/delete_affilate/{id}', [AffilateController::class, 'destroy'])->name('delete_affilate');
     //manage-code
     Route::get('/code-list', [Coupons::class, 'index'])->name('code_list');
     Route::get('/new-code', [Coupons::class, 'create'])->name('new_code');
@@ -124,7 +140,9 @@ Route::get('/about', function () {
     return view('user.about',compact('members','testmonials'));
 })->name('about');
 Route::get('/affiliate', function () {
-    return view('user.affiliate');
+    $affilates = \App\Models\Affilate::all();
+    $affilateFields = \App\Models\AffilateField::all();
+    return view('user.affiliate',compact('affilates','affilateFields'));
 })->name('affiliate');
 Route::get('/black-friday', function () {
     return view('user.black-friday');

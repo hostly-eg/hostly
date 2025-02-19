@@ -11,12 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('affilates', function (Blueprint $table) {
+        Schema::create('affilate_fields', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->decimal('price', 8, 2);
-            $table->string('description');
-            $table->json('fields');
+            $table->string('type');
+            $table->string('end_prefix')->nullable();
             $table->timestamps();
         });
     }
@@ -26,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('affilates');
+        Schema::dropIfExists('affilate_fields');
     }
 };
