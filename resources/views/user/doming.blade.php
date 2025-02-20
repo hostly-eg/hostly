@@ -24,11 +24,7 @@
                             <div class="doming-input">
                                 <input type="text" placeholder="domain.com" name="domain">
                                 <button class="theme-btn bg-color-2"
-                                        @if(auth()->user())
                                             type="submit"
-                                        @else
-                                            type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                                    @endif
                                 >Search Now</button>
                             </div>
                         </form>

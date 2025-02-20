@@ -190,7 +190,7 @@
                         <h2>
                             Create account
                         </h2>
-                        <form action="/register" method="POST" class="login-from">
+                        <form action="{{ route('sign_up') }}" method="POST" class="login-from">
                             @csrf
                             <div class="form-grp cmn-mb">
                                 <input type="text" placeholder="Your name" name="name">
@@ -230,9 +230,9 @@
                                 @enderror
                             </div>
                             <div class="form-check d-flex align-items-center gap-2 from-customradio">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
+                                <input class="form-check-input" type="radio" name="accept_terms"
+                                    id="accept_terms" required>
+                                <label class="form-check-label" for="accept_terms">
                                     <a href="{{ route('terms') }}" style="text-decoration: underline">
                                         i accept your terms & conditions
                                     </a>

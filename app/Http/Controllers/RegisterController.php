@@ -22,10 +22,7 @@ class RegisterController extends Controller
             'password' => [
                 'required','min:8','max:50','confirmed','regex:/[a-z]/','regex:/[A-Z]/','regex:/[0-9]/','regex:/[@$!%*#?&]/'
             ],
-            'address' => ['required', 'string', 'max:255'],
-            'phone' => [
-                'required','regex:/^\+?[0-9]{7,15}$/'
-            ],
+            'accept_terms' => ['required'],
         ], [
             'name.required' => 'The name field is required.',
             'name.string' => 'The name must be a valid string.',
