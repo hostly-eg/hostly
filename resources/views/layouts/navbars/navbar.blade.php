@@ -5,7 +5,7 @@
             <div class="offcanvas__content">
                 <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                     <div class="offcanvas__logo">
-                        <a href="index.html">
+                        <a href="/">
                             <img src="assets/img/logo/black-logo.svg" alt="logo-img">
                         </a>
                     </div>
@@ -106,7 +106,7 @@
                         <form action="/session" method="POST" class="login-from">
                             @csrf
                             <div class="form-grp cmn-mb">
-                                <input type="email" value="abdo@gmail.com" name="email">
+                                <input type="email" placeholder="Enter Email" name="email">
                                 @error('email')
                                     <p class="text-danger text-xs mt-2">{{ $message }}</p>
                                 @enderror
@@ -153,15 +153,17 @@
                             <input class="form-check-input" type="radio" name="flexRadioDefault"
                                 id="flexRadioDefault1">
                             <label class="form-check-label" for="flexRadioDefault1">
-                                i accept your terms & conditions
+                                <a href="{{ route('terms') }}" style="text-decoration: underline">
+                                    i accept your terms & conditions
+                                </a>
                             </label>
                         </div>
                     </div>
                 </div>
                 <div class="modal-right-thumb position-relative">
-                    <img src="assets/img/sign/login.png" alt="img">
+                    <img src="assets/img/Computer login-rafiki.png" class="col-12" alt="img">
                     <div class="signlogin-btnwrap">
-                        <button class="theme-create style-border" data-bs-toggle="modal"
+                        <button class="theme-btn" data-bs-toggle="modal"
                             data-bs-target="#exampleModal2">
                             create account
                         </button>
@@ -227,6 +229,15 @@
                                     <p class="text-danger text-xs mt-2">{{ $message }}</p>
                                 @enderror
                             </div>
+                            <div class="form-check d-flex align-items-center gap-2 from-customradio">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    <a href="{{ route('terms') }}" style="text-decoration: underline">
+                                        i accept your terms & conditions
+                                    </a>
+                                </label>
+                            </div>
                             <div class="mt-4">
                                 <button type="submit" class="theme-btn w-100">
                                     <span>
@@ -238,13 +249,13 @@
                     </div>
                 </div>
                 <div class="modal-right-thumb position-relative">
-                    <img src="assets/img/sign/create.png" alt="img">
+                    <img src="assets/img/Sign up-rafiki.png" class="col-12" alt="img">
                     <div class="signlogin-btnwrap">
-                        <button class="theme-create style-border" data-bs-toggle="modal"
+                        <button class="theme-btn " data-bs-toggle="modal"
                             data-bs-target="#exampleModal2">
                             create account
                         </button>
-                        <button class="theme-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <button class="theme-btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Log In
                         </button>
                     </div>
@@ -562,7 +573,7 @@
                                             </ul>
                                         </li>
                                         <li class="has-dropdown active d-xl-none">
-                                            <a href="team.html" class="border-none">
+                                            <a href="/" class="border-none">
                                                 Pages
                                                 <i class="fas fa-angle-down"></i>
                                             </a>
@@ -703,6 +714,8 @@
                                             <ul class="submenu">
                                                 <li><a href="{{ route('faq') }}">Faq</a></li>
                                                 <li><a href="{{ route('support') }}">Support</a></li>
+                                                <li><a href="{{ route('terms') }}">Terms Of Use</a></li>
+                                                <li><a href="{{ route('privacy') }}">Privecy Policy</a></li>
                                             </ul>
                                         </li>
                                     </ul>

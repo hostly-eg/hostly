@@ -193,7 +193,7 @@
         <!-- Brand Section Start -->
         <div class="brand-section fix section-padding pt-0">
             <div class="container">
-                <h3 class="brand-head-title"><img src="assets/img/w.png" alt="img">Recommended By <span>WordPress.org</span></h3>
+                <h3 class="brand-head-title"></h3>
                 <div class="swiper brand-slider-2">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">

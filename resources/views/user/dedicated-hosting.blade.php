@@ -463,40 +463,7 @@
         </section>
 
         <!-- Brand Section Start -->
-        <div class="brand-section fix section-padding section-bg pt-0 margin-top-10">
-            <div class="container">
-                <h3 class="brand-head-title"><img src="assets/img/w.png" alt="img">Recommended By <span>WordPress.org</span></h3>
-                <div class="swiper brand-slider-2">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="brand-img center">
-                                <img src="assets/img/brand/trustipilot.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-img center">
-                                <img src="assets/img/brand/google.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-img center">
-                                <img src="assets/img/brand/wpbeginner.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-img center">
-                                <img src="assets/img/brand/hostadvice.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-img center">
-                                <img src="assets/img/brand/capterra.png" alt="img">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    
 
 @endsection
 @section('script')

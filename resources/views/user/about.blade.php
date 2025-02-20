@@ -13,7 +13,7 @@
                     <h1 class="wow fadeInUp" data-wow-delay=".3s">About Us</h1>
                     <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                         <li>
-                            <a href="index.html">
+                            <a href="/">
                                 Home
                             </a>
                         </li>
@@ -26,7 +26,7 @@
                     </ul>
                 </div>
                 <div class="breadcrumb-image wow fadeInUp" data-wow-delay=".4s">
-                    <img src="assets/img/   .png" alt="img">
+                    <img src="assets/img/About us page-rafiki.png" alt="img">
                 </div>
             </div>
         </div>
@@ -129,8 +129,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <a href="about.html" class="theme-btn wow fadeInUp" data-wow-delay=".5s">Explore More <i class="fas fa-long-arrow-alt-right"></i>
-                            </a>
+                          
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 wow fadeInUp" data-wow-delay=".4s">
@@ -167,7 +166,7 @@
                             <img src="{{ asset('images/team_members/'.$member->image) }}" alt="img">
                         </div>
                         <div class="team-content bg-cover" style="background-image: url('assets/img/team/team-shape.png');">
-                           <h5><a href="team-details.html">{{ $member->name }}</a></h5>
+                           <h5>{{ $member->name }}</h5>
                            <p>{{ $member->job }}</p>
                             
                         </div>
@@ -296,8 +295,7 @@
                 </div>
             </div>
             <div class="testimonial-click-text wow fadeInUp" data-wow-delay=".3s">
-                <p>Explore more testimonials by</p>
-                <a href="contact.html"> Click Here</a>
+                <a href="{{ route("support") }}"> Click Here</a>
             </div>
         </div>
     </section>

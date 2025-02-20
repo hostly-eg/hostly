@@ -47,11 +47,9 @@
                             </ul>
                         </div>
                         <div class="hero-author">
-                            <a href="contact.html" class="theme-btn bg-color-2 wow fadeInUp" data-wow-delay=".7s">
-                                Get Started <i class="fas fa-long-arrow-alt-right"></i>
-                            </a>
-                            <a href="index.html" class="theme-btn border-white wow fadeInUp" data-wow-delay=".7s">
-                                Start Free <i class="fas fa-long-arrow-alt-right"></i>
+                          
+                            <a href="{{ route("support") }}" class="theme-btn border-white wow fadeInUp" data-wow-delay=".7s">
+                                Start Free Consaltaion <i class="fas fa-long-arrow-alt-right"></i>
                             </a>
                         </div>
                     </div>
@@ -144,11 +142,10 @@
                             <img src="assets/img/hosting/icon-4.png" alt="img">
                         </div>
                         <div class="content">
-                            <h3><a href="cloud-hosting.html">Cloud Hosting</a></h3>
+                            <h3><a href="{{ route("coming_soon") }}">Cloud Hosting</a></h3>
                             <p>Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting
                                 services.</p>
-                            <a href="cloud-hosting.html" class="theme-btn mt-4">Best hosting <i
-                                    class="fa-regular fa-chevrons-right"></i></a>
+                            
                         </div>
                     </div>
                 </div>
@@ -158,11 +155,10 @@
                             <img src="assets/img/hosting/icon-5.png" alt="img">
                         </div>
                         <div class="content">
-                            <h3><a href="cloud-hosting.html">Reseller Hosting</a></h3>
+                            <h3><a href="{{ route("coming_soon") }}">Reseller Hosting</a></h3>
                             <p>Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting
                                 services.</p>
-                            <a href="reseller-hosting.html" class="theme-btn mt-4">Best hosting <i
-                                    class="fa-regular fa-chevrons-right"></i></a>
+                        
                         </div>
                     </div>
                 </div>
@@ -172,11 +168,10 @@
                             <img src="assets/img/hosting/icon-7.png" alt="img">
                         </div>
                         <div class="content">
-                            <h3><a href="share-hosting.html">Web Hosting</a></h3>
+                            <h3><a href="{{ route("share_hosting") }}">Web Hosting</a></h3>
                             <p>Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting
                                 services.</p>
-                            <a href="cloud-hosting.html" class="theme-btn mt-4">Best hosting <i
-                                    class="fa-regular fa-chevrons-right"></i></a>
+                            
                         </div>
                     </div>
                 </div>
@@ -189,8 +184,7 @@
                             <h3><a href="domain.html">Domain Name</a></h3>
                             <p>Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting
                                 services.</p>
-                            <a href="cloud-hosting.html" class="theme-btn mt-4">Best hosting <i
-                                    class="fa-regular fa-chevrons-right"></i></a>
+                            
                         </div>
                     </div>
                 </div>

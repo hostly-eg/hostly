@@ -204,3 +204,9 @@ Route::get('/client-testmonial-image/{image}', function ($image) {
 Route::get('coming-soon',function(){
     return view('user.soon');
 })->name('coming_soon');
+Route::get('/terms-of-use', function () {
+    return view('user.terms-of-use');
+})->name('terms');
+Route::get('/privacy-policy', function () {
+    return view('user.privacy-policy');
+})->name('privacy');

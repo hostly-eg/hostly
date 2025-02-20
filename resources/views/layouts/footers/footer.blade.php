@@ -6,7 +6,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                     <div class="single-footer-widget">
                         <div class="widget-head">
-                            <a href="index.html">
+                            <a href="/">
                                 <img src="assets/img/logo/white-logo.svg" alt="logo-img">
                             </a>
                         </div>
@@ -39,19 +39,19 @@
                         </div>
                         <ul class="list-area">
                             <li>
-                                <a href="about.html">
+                                <a href="{{ route('about') }}">
                                     <i class="fa-regular fa-chevrons-right"></i>
                                     hostly About
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
+                                <a href="{{ route('support') }}">
                                     <i class="fa-regular fa-chevrons-right"></i>
                                     Contact Us
                                 </a>
                             </li>
                             <li>
-                                <a href="pricing.html">
+                                <a href="{{ route('pricing') }}">
                                     <i class="fa-regular fa-chevrons-right"></i>
                                     Pricing Plans
                                 </a>
@@ -63,7 +63,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
+                                <a href="{{ route('privacy') }}">
                                     <i class="fa-regular fa-chevrons-right"></i>
                                     Privacy Policy
                                 </a>
@@ -78,31 +78,31 @@
                         </div>
                         <ul class="list-area">
                             <li>
-                                <a href="shared-hosting.html">
+                                <a href="{{ route('share_hosting') }}">
                                     <i class="fa-regular fa-chevrons-right"></i>
                                     Shared Hosting
                                 </a>
                             </li>
                             <li>
-                                <a href="reseller-hosting.html">
+                                <a href="{{ route('coming_soon') }}">
                                     <i class="fa-regular fa-chevrons-right"></i>
                                     Reseller Hosting
                                 </a>
                             </li>
                             <li>
-                                <a href="vps-hosting.html">
+                                <a href="{{ route('vps_hosting') }}">
                                     <i class="fa-regular fa-chevrons-right"></i>
                                     VPS Hosting
                                 </a>
                             </li>
                             <li>
-                                <a href="cloud-hosting.html">
+                                <a href="{{ route('coming_soon') }}">
                                     <i class="fa-regular fa-chevrons-right"></i>
                                     Cloud Hosting
                                 </a>
                             </li>
                             <li>
-                                <a href="dedicated-hosting.html">
+                                <a href="{{ route('coming_soon') }}">
                                     <i class="fa-regular fa-chevrons-right"></i>
                                     Dedicated Hosting
                                 </a>
@@ -141,16 +141,16 @@
         <div class="container">
             <div class="footer-wrapper d-flex align-items-center justify-content-between">
                 <p class="wow fadeInLeft" data-wow-delay=".3s">
-                    © All Copyright 2024 by <a href="index.html">hostly</a>
+                    © All Copyright 2024 by <a href="/">HOSLTY-EG</a>
                 </p>
                 <ul class="footer-menu wow fadeInRight" data-wow-delay=".5s">
                     <li>
-                        <a href="contact.html">
+                        <a href="{{ route('terms') }}">
                             Terms & Condition
                         </a>
                     </li>
                     <li>
-                        <a href="contact.html">
+                        <a href="{{ route('privacy') }}">
                             Privacy Policy
                         </a>
                     </li>

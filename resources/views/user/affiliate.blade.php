@@ -30,9 +30,9 @@
                         <h1 class="wow fadeInUp" data-wow-delay=".3s">
                             Hostly Web Hosting Affiliate Program
                         </h1>
-                        <a href="pricing.html" class="theme-btn bg-color-2 wow fadeInUp" data-wow-delay=".5s">
+                     {{--    <a href="{{ route("pricing") }}" class="theme-btn bg-color-2 wow fadeInUp" data-wow-delay=".5s">
                             view plan <i class="fas fa-long-arrow-alt-right"></i>
-                        </a>
+                        </a> --}}
                     </div>
                 </div>
                 <div class="col-lg-3 wow fadeInUp" data-wow-delay=".4s">
@@ -121,12 +121,9 @@
                                 <ul class="wow fadeInUp" data-wow-delay=".3s">
                                     <li>
                                         <i class="far fa-check"></i>
-                                        30-day money back guarantee
+                                        5-days money back guarantee
                                     </li>
-                                    <li>
-                                        <i class="far fa-check"></i>
-                                        Web site Marketing Solutions
-                                    </li>
+                                
                                 </ul>
                                 <ul class="wow fadeInUp" data-wow-delay=".5s">
                                     <li>
@@ -149,9 +146,9 @@
     </section>
 
     <!-- Brand Section Start -->
-    <div class="brand-section fix section-padding section-bg margin-top-10 pb-0">
+{{--     <div class="brand-section fix section-padding section-bg margin-top-10 pb-0">
         <div class="container">
-            <h3 class="brand-head-title wow fadeInUp" data-wow-delay=".3s"><img src="assets/img/w.png" alt="img">Recommended By <span>WordPress.org</span></h3>
+            <h3 class="brand-head-title wow fadeInUp" data-wow-delay=".3s"></h3>
             <div class="swiper brand-slider-2">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -183,7 +180,7 @@
             </div>
         </div>
     </div>
-
+ --}}
     <!-- Choose Us Section Start -->
     <section class="choose-us-section-2 pt-100 pb-100 margin-top-5">
         <div class="container">
@@ -258,7 +255,7 @@
                         <h6 class="top-text">All Plan Features</h6>
                         <div class="pricing-header">
                             <div class="affiliate-img">
-                                <img src="assets/img/hosting/affiliate.png" alt="img">
+                                <img src="assets/img/affiliate.png" alt="img">
                             </div>
                         </div>
                         <ul>
