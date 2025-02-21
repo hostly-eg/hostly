@@ -198,7 +198,7 @@
                                         @endforeach
                                     </ul>
                                     <div class="pricing-button">
-                                        <a href="{{ route('support') }}" class="pricing-btn">
+                                        <a href="{{ route('cart', [$plan->id, 0]) }}" class="pricing-btn">
                                             get Started Now
                                             <i class="fa-solid fa-arrow-right-long"></i>
                                         </a>

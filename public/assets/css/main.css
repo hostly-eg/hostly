@@ -1087,13 +1087,13 @@ span {
   color: #4f536c;
   width: 100%;
 }
-.modal-common-wrap .modal-body .modal-common-content .login-from .form-grp ::placeholder {
+.modall-common-wrap .modal-body .modal-common-content .login-from .form-grp ::placeholder {
   color: #4f536c;
 }
-.modal-common-wrap .modal-body .modal-common-content .forgot-inner-area {
+.modall-common-wrap .modal-body .modal-common-content .forgot-inner-area {
   margin-top: 14px;
 }
-.modal-common-wrap .modal-body .modal-common-content .forgot-inner-area .checkmark-inner {
+.modall-common-wrap .modal-body .modal-common-content .forgot-inner-area .checkmark-inner {
   margin-bottom: 0;
   display: flex;
   align-items: center;
@@ -1153,7 +1153,7 @@ span {
 .modal-common-wrap .modal-dialog {
   max-width: 1410px;
 }
-.modal-common-wrap .modal-right-thumb .signlogin-btnwrap {
+.modall-common-wrap .modal-right-thumb .signlogin-btnwrap {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -1162,14 +1162,14 @@ span {
   top: 45%;
   left: -80px;
 }
-.modal-common-wrap .modal-right-thumb .signlogin-btnwrap .theme-btn {
+.modall-common-wrap .modal-right-thumb .signlogin-btnwrap .theme-btn {
   border-radius: 0;
   padding: 14px 24px;
   min-width: initial;
   font-size: 16px;
   font-weight: 400;
 }
-.modal-common-wrap .modal-right-thumb .signlogin-btnwrap .theme-create {
+.modall-common-wrap .modal-right-thumb .signlogin-btnwrap .theme-create {
   padding: 6px 24px;
   border: 1px solid var(--white);
   font-size: 16px;
@@ -1177,7 +1177,7 @@ span {
   text-transform: capitalize;
   color: var(--white);
 }
-.modal-common-wrap .modal-right-thumb .signlogin-btnwrap .theme-create:hover {
+.modall-common-wrap .modal-right-thumb .signlogin-btnwrap .theme-create:hover {
   background: var(--theme);
   border-color: var(--theme);
 }

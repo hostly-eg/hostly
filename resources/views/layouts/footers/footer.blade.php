@@ -120,10 +120,13 @@
                                 Sign up to seargin weekly newsletter to get the latest updates.
                             </p>
                             <div class="footer-input">
-                                <input type="email" id="email2" placeholder="Enter Email Address">
-                                <button class="newsletter-btn" type="submit">
-                                    <i class="fa-regular fa-paper-plane"></i>
-                                </button>
+                                <form action="{{ route('store_news_subscriber') }}" method="POST">
+                                    @csrf
+                                    <input type="email" id="email2" placeholder="Enter Email Address" name="email">
+                                    <button class="newsletter-btn" type="submit">
+                                        <i class="fa-regular fa-paper-plane"></i>
+                                    </button>
+                                </form>
                             </div>
                             <div class="social-icon d-flex align-items-center">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>

@@ -74,341 +74,52 @@
                     <span class="style-border wow fadeInUp">Pricing Plans</span>
                     <h2 class="wow fadeInUp" data-wow-delay=".3s">Get the More Powerful With hostly <br> Reseller Hosting Plans</h2>
                 </div>
-                <div class="pricing-tab-header">
-                    <div class="arrow-shape">
-                        <img src="assets/img/arrow.png" alt="img">
-                    </div>
-                    <ul class="nav" role="tablist">
-                        <li class="nav-item wow fadeInUp" data-wow-delay=".3s" role="presentation">
-                            <a href="#monthly" data-bs-toggle="tab" class="nav-link active" aria-selected="true" role="tab">
-                                Monthly
-                            </a>
-                        </li>
-                        <li class="nav-item wow fadeInUp" data-wow-delay=".5s" role="presentation">
-                            <a href="#yearly" data-bs-toggle="tab" class="nav-link" aria-selected="false" role="tab" tabindex="-1">
-                                Yearly
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="save-text">
-                        Save 25%
-                    </div>
-                </div>
-                <div class="tab-content">
-                    <div id="monthly" class="tab-pane fade show active" role="tabpanel">
-                        <div class="row">
-                            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                                <div class="pricing-card-items responsive-pricing-style">
-                                    <div class="wing-shape">
-                                        <img src="assets/img/wing-shape.png" alt="img">
-                                    </div>
-                                    <div class="icon">
-                                        <img src="assets/img/pricing/icon-1.png" alt="img">
-                                    </div>
-                                    <div class="pricing-bg">
-                                        <img src="assets/img/pricing/pricing-shape.png" alt="img">
-                                    </div>
-                                    <div class="pricing-header">
-                                        <div class="price-content">
-                                            <h3>Shared Hosting</h3>
-                                            <p>Collaboratively formulate</p>
-                                        </div>
-                                        <h2>$29</h2>
-                                    </div>
-                                    <ul class="pricing-list">
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Branding and design Identity
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Web site Marketing Solutions
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Free 15 GB Linux Hosting
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Unlimited Application Installation
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Unlimited Download Data
-                                        </li>
-                                        <li class="color-2">
-                                            <i class="fa-solid fa-xmark"></i>
-                                            Dedicated IP Address
-                                        </li>
-                                    </ul>
-                                    <div class="pricing-button">
-                                        <a href="contact.html" class="theme-btn">
-                                            get Started Now <i class="fas fa-long-arrow-alt-right"></i>
-                                        </a>
-                                    </div>
+                <div class="row g-0">
+                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="affiliate-card-items">
+                            <h6 class="top-text">All Plan Features</h6>
+                            <div class="pricing-header">
+                                <div class="affiliate-img">
+                                    <img src="assets/img/affiliate.png" alt="img">
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                                <div class="pricing-card-items responsive-pricing-style">
-                                    <div class="wing-shape">
-                                        <img src="assets/img/wing-shape.png" alt="img">
-                                    </div>
-                                    <div class="icon">
-                                        <img src="assets/img/pricing/icon-1.png" alt="img">
-                                    </div>
-                                    <div class="pricing-bg">
-                                        <img src="assets/img/pricing/pricing-shape.png" alt="img">
-                                    </div>
-                                    <div class="pricing-header">
-                                        <div class="price-content">
-                                            <h3>VPS Hosting</h3>
-                                            <p>Collaboratively formulate</p>
-                                        </div>
-                                        <h2>$39</h2>
-                                    </div>
-                                    <ul class="pricing-list">
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Branding and design Identity
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Web site Marketing Solutions
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Free 15 GB Linux Hosting
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Unlimited Application Installation
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Unlimited Download Data
-                                        </li>
-                                        <li class="color-2">
-                                            <i class="fa-solid fa-xmark"></i>
-                                            Dedicated IP Address
-                                        </li>
-                                    </ul>
-                                    <div class="pricing-button">
-                                        <a href="contact.html" class="theme-btn">
-                                            get Started Now <i class="fas fa-long-arrow-alt-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                                <div class="pricing-card-items responsive-pricing-style">
-                                    <div class="wing-shape">
-                                        <img src="assets/img/wing-shape.png" alt="img">
-                                    </div>
-                                    <div class="icon">
-                                        <img src="assets/img/pricing/icon-1.png" alt="img">
-                                    </div>
-                                    <div class="pricing-bg">
-                                        <img src="assets/img/pricing/pricing-shape.png" alt="img">
-                                    </div>
-                                    <div class="pricing-header">
-                                        <div class="price-content">
-                                            <h3>Cloud Hosting</h3>
-                                            <p>Collaboratively formulate</p>
-                                        </div>
-                                        <h2>$59</h2>
-                                    </div>
-                                    <ul class="pricing-list">
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Branding and design Identity
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Web site Marketing Solutions
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Free 15 GB Linux Hosting
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Unlimited Application Installation
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Unlimited Download Data
-                                        </li>
-                                        <li class="color-2">
-                                            <i class="fa-solid fa-xmark"></i>
-                                            Dedicated IP Address
-                                        </li>
-                                    </ul>
-                                    <div class="pricing-button">
-                                        <a href="contact.html" class="theme-btn">
-                                            get Started Now <i class="fas fa-long-arrow-alt-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            <ul>
+                                @foreach ($affilateFields as $affilateField)
+                                    <li>
+                                        {{ $affilateField->name }}
+                                    </li>
+                                @endforeach
+                            </ul>
                         </div>
                     </div>
-                    <div id="yearly" class="tab-pane fade" role="tabpanel">
-                        <div class="row">
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="pricing-card-items responsive-pricing-style">
-                                    <div class="wing-shape">
-                                        <img src="assets/img/wing-shape.png" alt="img">
-                                    </div>
-                                    <div class="icon">
-                                        <img src="assets/img/pricing/icon-1.png" alt="img">
-                                    </div>
-                                    <div class="pricing-bg">
-                                        <img src="assets/img/pricing/pricing-shape.png" alt="img">
-                                    </div>
-                                    <div class="pricing-header">
-                                        <div class="price-content">
-                                            <h3>Shared Hosting</h3>
-                                            <p>Collaboratively formulate</p>
-                                        </div>
-                                        <h2>$29</h2>
-                                    </div>
-                                    <ul class="pricing-list">
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Branding and design Identity
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Web site Marketing Solutions
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Free 15 GB Linux Hosting
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Unlimited Application Installation
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Unlimited Download Data
-                                        </li>
-                                        <li class="color-2">
-                                            <i class="fa-solid fa-xmark"></i>
-                                            Dedicated IP Address
-                                        </li>
-                                    </ul>
-                                    <div class="pricing-button">
-                                        <a href="contact.html" class="theme-btn">
-                                            get Started Now <i class="fas fa-long-arrow-alt-right"></i>
-                                        </a>
-                                    </div>
+                    @foreach ($affilates as $affilate)
+                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="affiliate-card-items">
+                            <h6 class="top-text">{{ $affilate->name }}</h6>
+                            <div class="pricing-header">
+                                <div class="price-list">
+                                    <del>{{ $affilate->price }}</del>
                                 </div>
+                                <p class="text-center">
+                                    {{ $affilate->description }}
+                                </p>
+                                <a href="contact.html" class="theme-btn">get Started Now  <i class="fas fa-long-arrow-alt-right"></i>
+                                </a>
                             </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="pricing-card-items responsive-pricing-style">
-                                    <div class="wing-shape">
-                                        <img src="assets/img/wing-shape.png" alt="img">
-                                    </div>
-                                    <div class="icon">
-                                        <img src="assets/img/pricing/icon-1.png" alt="img">
-                                    </div>
-                                    <div class="pricing-bg">
-                                        <img src="assets/img/pricing/pricing-shape.png" alt="img">
-                                    </div>
-                                    <div class="pricing-header">
-                                        <div class="price-content">
-                                            <h3>VPS Hosting</h3>
-                                            <p>Collaboratively formulate</p>
-                                        </div>
-                                        <h2>$39</h2>
-                                    </div>
-                                    <ul class="pricing-list">
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Branding and design Identity
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Web site Marketing Solutions
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Free 15 GB Linux Hosting
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Unlimited Application Installation
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Unlimited Download Data
-                                        </li>
-                                        <li class="color-2">
-                                            <i class="fa-solid fa-xmark"></i>
-                                            Dedicated IP Address
-                                        </li>
-                                    </ul>
-                                    <div class="pricing-button">
-                                        <a href="contact.html" class="theme-btn">
-                                            get Started Now <i class="fas fa-long-arrow-alt-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="pricing-card-items responsive-pricing-style">
-                                    <div class="wing-shape">
-                                        <img src="assets/img/wing-shape.png" alt="img">
-                                    </div>
-                                    <div class="icon">
-                                        <img src="assets/img/pricing/icon-1.png" alt="img">
-                                    </div>
-                                    <div class="pricing-bg">
-                                        <img src="assets/img/pricing/pricing-shape.png" alt="img">
-                                    </div>
-                                    <div class="pricing-header">
-                                        <div class="price-content">
-                                            <h3>Cloud Hosting</h3>
-                                            <p>Collaboratively formulate</p>
-                                        </div>
-                                        <h2>$59</h2>
-                                    </div>
-                                    <ul class="pricing-list">
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Branding and design Identity
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Web site Marketing Solutions
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Free 15 GB Linux Hosting
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Unlimited Application Installation
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Unlimited Download Data
-                                        </li>
-                                        <li class="color-2">
-                                            <i class="fa-solid fa-xmark"></i>
-                                            Dedicated IP Address
-                                        </li>
-                                    </ul>
-                                    <div class="pricing-button">
-                                        <a href="contact.html" class="theme-btn">
-                                            get Started Now <i class="fas fa-long-arrow-alt-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            <ul class="text-center">
+                                @foreach ($affilateFields as $affilateField)
+                                    <li>
+                                        @if ($affilateField->type == 'checkbox')
+                                            $affilate->fields[$affilateField->id] == 1 ? <i class="fa-regular fa-check"></i> : <i class="fa-regular fa-xmark"></i>
+                                        @else
+                                            {{ $affilate->fields_rendered[$affilateField->id]['value'] }}
+                                        @endif
+                                    </li>
+                                @endforeach
+                            </ul>
                         </div>
                     </div>
+                    @endforeach
                 </div>
                 <div class="pricing-title wow fadeInUp" data-wow-delay=".4s">
                     <p>Cost-effective hosting that delivers secure, reliable performance. </p>

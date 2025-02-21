@@ -1,29 +1,33 @@
 <?php
 
+use App\Models\Faq;
+use App\Models\User;
+use App\Models\HostingPlan;
+use Illuminate\Http\Request;
+use App\Http\Controllers\user\Cart;
+use App\Http\Controllers\user\Home;
+use Illuminate\Support\Facades\Mail;
+use App\Http\Controllers\Admin\Plans;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\Orders;
+use App\Http\Controllers\user\Profile;
 use App\Http\Controllers\Admin\Coupons;
+use App\Http\Controllers\FaqController;
+use App\Http\Controllers\Admin\VpsPlans;
 use App\Http\Controllers\Admin\Customers;
 use App\Http\Controllers\Admin\Dashboard;
 use App\Http\Controllers\Admin\DomainPlans;
-use App\Http\Controllers\Admin\Orders;
-use App\Http\Controllers\Admin\Plans;
-use App\Http\Controllers\Admin\VpsPlans;
+use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SessionsController;
-use App\Http\Controllers\user\Cart;
-use App\Http\Controllers\user\DomainController;
-use App\Http\Controllers\user\Home;
-use App\Http\Controllers\user\Profile;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\OffersHeaderController;
-use App\Http\Controllers\PartnerController;
-use App\Http\Controllers\ClientTestmonialController;
-use App\Http\Controllers\HostingPageController;
 use App\Http\Controllers\TeamMemberController;
-use App\Http\Controllers\ContactRequestController;
-use App\Http\Controllers\FaqController;
-use App\Http\Controllers\Admin\AffilateFieldController;
+use App\Http\Controllers\HostingPageController;
+use App\Http\Controllers\user\DomainController;
+use App\Http\Controllers\OffersHeaderController;
 use App\Http\Controllers\Admin\AffilateController;
+use App\Http\Controllers\ContactRequestController;
+use App\Http\Controllers\ClientTestmonialController;
+use App\Http\Controllers\Admin\AffilateFieldController;
 Route::group(['middleware' => 'admin'], function () {
     Route::get('/dashboard', [Dashboard::class, 'dashboard'])->name('dashboard');
     Route::get('/contact_requests', [ContactRequestController::class, 'index'])->name('contact_requests');
@@ -124,6 +128,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/cart_vps{plan_id}{subs_id}', [Cart::class, 'vps'])->name('cart_vps');
     Route::put('/customer-update_dns{subs_id}', [Profile::class, 'update_dns'])->name('update_dns');
 });
+Route::get('/login', function () {
+    return view('user.login');
+})->name('login');
 Route::post('/session', [SessionsController::class, 'store'])->name('sign_in');
 Route::post('/register', [RegisterController::class, 'store'])->name('sign_up');
 Route::get('/', [Home::class, 'index'])->name('home');
@@ -142,7 +149,8 @@ Route::get('/about', function () {
 Route::get('/affiliate', function () {
     $affilates = \App\Models\Affilate::all();
     $affilateFields = \App\Models\AffilateField::all();
-    return view('user.affiliate',compact('affilates','affilateFields'));
+    $faqs = Faq::all();
+    return view('user.affiliate',compact('affilates','affilateFields','faqs'));
 })->name('affiliate');
 Route::get('/black-friday', function () {
     return view('user.black-friday');
@@ -177,13 +185,16 @@ Route::get('/news-grid', function () {
     return view('user.news-grid');
 })->name('news_grid');
 Route::get('/pricing', function () {
-    return view('user.pricing');
+    $faqs = Faq::all();
+    $plans = HostingPlan::all();
+    return view('user.pricing', compact('faqs', 'plans'));
 })->name('pricing');
 Route::get('/pricing-2', function () {
     return view('user.pricing-2');
 })->name('pricing_2');
 Route::get('/service', function () {
-    return view('user.service');
+    $faqs = Faq::all();
+    return view('user.service', compact('faqs'));
 })->name('service');
 Route::get('/team-details', function () {
     return view('user.team-details');
@@ -210,3 +221,13 @@ Route::get('/terms-of-use', function () {
 Route::get('/privacy-policy', function () {
     return view('user.privacy-policy');
 })->name('privacy');
+Route::post('/store_news_subscriber', function (Request $request) {
+    $request->validate([
+        'email' => 'required|email|unique:news_subscribers,email',
+    ]);
+    App\Models\NewsSubscriber::create(['email' => $request->email]);
+    return redirect()->back()->with('success', 'News Subscriber created successfully');
+})->name('store_news_subscriber');
+Route::get('/test-mail', function () {
+    Mail::to('ahmed.work.ceo@gmail.com')->send(new \App\Mail\WelcomeMail(User::find(1)));
+});

@@ -44,8 +44,10 @@ class HostingPageController extends Controller
     public function reseller_hosting()
     {
         $testmonials = ClientTestmonial::all();
+        $affilates = \App\Models\Affilate::all();
+        $affilateFields = \App\Models\AffilateField::all();    
         $faqs = Faq::all();
-        return view('user.reseller-hosting', compact('testmonials', 'faqs'));
+        return view('user.reseller-hosting', compact('testmonials', 'faqs', 'affilates', 'affilateFields'));
     }
     public function doming()
     {

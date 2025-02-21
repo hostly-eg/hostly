@@ -27,8 +27,8 @@
             <table class="content" width="600" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border: 1px solid #cccccc;">
                 <!-- Header -->
                 <tr>
-                    <td class="header" style="background-color: #007bff; padding: 40px; text-align: center; color: white; font-size: 24px;">
-                        welcome to hostily's family
+                    <td class="header" style="background-color: #007bff; padding: 40px; text-align: center;">
+                        <img src="https://hostly-eg.com/assets/img/logo/white-logo.png" alt="Hostly Logo" style="max-width: 200px; height: auto;">
                     </td>
                 </tr>
 
@@ -40,7 +40,7 @@
                         You can access your
                         account
                         area to view orders, change your password, and more at:
-                        <a href="https://fplchallenge.mathewmaged.com/my-account/">
+                        <a href="https://hostly-eg.com/my-account/">
                             https://hostly-eg.com/my-account/
                         </a>
                     </td>

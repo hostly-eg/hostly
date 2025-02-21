@@ -294,7 +294,7 @@
                         <a href="tel:+20866660112">+201028887119</a>
                     </li>
                 </ul>
-                <p>Hostech Flash Discount: Starting at <b>$3.49/mo</b> for a Limited time</p>
+                <p>Hostech Flash Discount: {!! request()->attributes->get('offers_header') !!}</p>
                 <ul class="list">
 
                     <li>
