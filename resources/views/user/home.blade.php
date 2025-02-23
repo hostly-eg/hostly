@@ -619,7 +619,7 @@
                                 Customers Love</h2>
                         </div>
                         <div class="cta-contact-button mt-4 mt-md-0">
-                            <a href="https://wa.me/01028887119" class="theme-btn bg-color-2 wow fadeInUp"
+                            <a href="https://wa.me/01028887119?text=Hi!%20I'm%20interested%20in%20your%20services%20and%20would%20love%20to%20know%20more%20about%20it.%20Could%20you%20please%20send%20me%20more%20information?%20Thank%20you!" class="theme-btn bg-color-2 wow fadeInUp"
                                 data-wow-delay=".5s">WhatsApp Now <i class="fas fa-long-arrow-alt-right"></i></a>
                             <h4 class="wow fadeInUp" data-wow-delay=".5s">
                                 <i class="fa-light fa-envelope"></i>

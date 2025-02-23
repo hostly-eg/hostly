@@ -35,13 +35,15 @@
                 <!-- Body -->
                 <tr>
                     <td class="body" style="padding: 40px; text-align: left; font-size: 16px; line-height: 1.6;">
-                        hi {{$user->name}},
+                        HI {{$user->name}},
+                        <br><br>
+                        Welcome to Hostly's EG Family, your one-stop solution for all your hosting needs.
                         <br><br>
                         You can access your
                         account
                         area to view orders, change your password, and more at:
-                        <a href="https://hostly-eg.com/my-account/">
-                            https://hostly-eg.com/my-account/
+                        <a href="https://hostly-eg.com/profile/">
+                            https://hostly-eg.com/profile/
                         </a>
                     </td>
                 </tr>

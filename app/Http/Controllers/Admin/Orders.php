@@ -67,7 +67,7 @@ class Orders extends Controller
             $subscription->update([
                 'user_host' => $validData['user_host'],
                 'password_host' => $validData['password_host'],
-                'cpanel_link' => $validData['link'],
+                'cPanel_link' => $validData['link'],
                 'status' => 'active',
             ]);
 

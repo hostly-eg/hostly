@@ -1036,17 +1036,17 @@ span {
   margin-bottom: 20px;
 }
 
-.modal-common-wrap {
+.modall-common-wrap {
   position: relative;
-  z-index: 9999;
+
   overflow-y: scroll;
   max-height: 100vh;
 }
-.modal-common-wrap .modal-content {
+.modall-common-wrap .modall-content {
   background: transparent;
   border: unset;
 }
-.modal-common-wrap .modal-header {
+.modall-common-wrap .modall-header {
   border-radius: 0;
   padding: 0 0;
   margin-left: auto;
@@ -1056,58 +1056,58 @@ span {
   align-items: center;
   justify-content: center;
 }
-.modal-common-wrap .modal-header .btn-close {
+.modall-common-wrap .modall-header .btn-close {
   margin: 0 0;
   padding: 0 0;
   outline: none;
   width: 40px;
   height: 40px;
 }
-.modal-common-wrap .modal-body {
+.modall-common-wrap .modall-body {
   background: var(--white);
   box-shadow: 0px 4px 25px rgba(56, 75, 255, 0.08);
   padding: 0 0;
 }
-.modal-common-wrap .modal-body .modal-common-content {
+.modall-common-wrap .modall-body .modall-common-content {
   padding: 50px 65px;
   width: 538px;
 }
-.modal-common-wrap .modal-body .modal-common-content h2 {
+.modall-common-wrap .modall-body .modall-common-content h2 {
   font-size: 40px;
   color: var(--black);
   margin-bottom: 65px;
 }
-.modal-common-wrap .modal-body .modal-common-content .login-from .cmn-mb {
+.modall-common-wrap .modall-body .modall-common-content .login-from .cmn-mb {
   margin-bottom: 30px;
 }
-.modal-common-wrap .modal-body .modal-common-content .login-from .form-grp input {
+.modall-common-wrap .modal-body .modall-common-content .login-from .form-grp input {
   border: unset;
   padding-bottom: 16px;
   border-bottom: 1px solid #d9d9d9;
   color: #4f536c;
   width: 100%;
 }
-.modall-common-wrap .modal-body .modal-common-content .login-from .form-grp ::placeholder {
+.modall-common-wrap .modall-body .modal-common-content .login-from .form-grp ::placeholder {
   color: #4f536c;
 }
-.modall-common-wrap .modal-body .modal-common-content .forgot-inner-area {
+.modall-common-wrap .modall-body .modal-common-content .forgot-inner-area {
   margin-top: 14px;
 }
-.modall-common-wrap .modal-body .modal-common-content .forgot-inner-area .checkmark-inner {
+.modall-common-wrap .modal-body .modall-common-content .forgot-inner-area .checkmark-inner {
   margin-bottom: 0;
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.modal-common-wrap .modal-body .modal-common-content .forgot-inner-area .checkmark-inner .form-check-input {
+.modall-common-wrap .modall-body .modall-common-content .forgot-inner-area .checkmark-inner .form-check-input {
   margin-top: 0;
 }
-.modal-common-wrap .modal-body .modal-common-content .forgot-inner-area .checkmark-inner .form-check-label {
+.modall-common-wrap .modall-body .modall-common-content .forgot-inner-area .checkmark-inner .form-check-label {
   font-size: 14px;
   color: var(--header);
   line-height: 18px;
 }
-.modal-common-wrap .modal-body .modal-common-content .orting-badge {
+.modall-common-wrap .modall-body .modall-common-content .orting-badge {
   position: relative;
   text-align: center;
   display: flex;
@@ -1118,7 +1118,7 @@ span {
   color: #445375;
   margin: 28px 0;
 }
-.modal-common-wrap .modal-body .modal-common-content .orting-badge::before {
+.modall-common-wrap .modall-body .modall-common-content .orting-badge::before {
   position: absolute;
   left: 0;
   content: "";
@@ -1126,7 +1126,7 @@ span {
   width: 44%;
   background: #d9d9d9;
 }
-.modal-common-wrap .modal-body .modal-common-content .orting-badge::after {
+.modall-common-wrap .modall-body .modall-common-content .orting-badge::after {
   position: absolute;
   right: 0;
   content: "";
@@ -1134,14 +1134,14 @@ span {
   width: 44%;
   background: #d9d9d9;
 }
-.modal-common-wrap .modal-body .modal-common-content .theme-btn {
+.modall-common-wrap .modall-body .modall-common-content .theme-btn {
   border-radius: 0px;
 }
-.modal-common-wrap .modal-body .modal-common-content .forgot {
+.modall-common-wrap .modal-body .modall-common-content .forgot {
   font-size: 14px;
   color: var(--theme);
 }
-.modal-common-wrap .modal-body .modal-common-content .cmn-social {
+.modall-common-wrap .modall-body .modall-common-content .cmn-social {
   display: flex;
   align-items: center;
   gap: 69px;
@@ -1150,10 +1150,10 @@ span {
   text-transform: capitalize;
   font-weight: 600;
 }
-.modal-common-wrap .modal-dialog {
+.modall-common-wrap .modall-dialog {
   max-width: 1410px;
 }
-.modall-common-wrap .modal-right-thumb .signlogin-btnwrap {
+.modall-common-wrap .modall-right-thumb .signlogin-btnwrap {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -1162,7 +1162,7 @@ span {
   top: 45%;
   left: -80px;
 }
-.modall-common-wrap .modal-right-thumb .signlogin-btnwrap .theme-btn {
+.modall-common-wrap .modall-right-thumb .signlogin-btnwrap .theme-btn {
   border-radius: 0;
   padding: 14px 24px;
   min-width: initial;
@@ -1177,74 +1177,74 @@ span {
   text-transform: capitalize;
   color: var(--white);
 }
-.modall-common-wrap .modal-right-thumb .signlogin-btnwrap .theme-create:hover {
+.modall-common-wrap .modall-right-thumb .signlogin-btnwrap .theme-create:hover {
   background: var(--theme);
   border-color: var(--theme);
 }
-.modal-common-wrap .from-customradio {
+.modall-common-wrap .from-customradio {
   margin-top: 20px;
 }
-.modal-common-wrap .from-customradio .form-check-input {
+.modall-common-wrap .from-customradio .form-check-input {
   margin-top: 0;
 }
-.modal-common-wrap .from-customradio .form-check-label {
+.modall-common-wrap .from-customradio .form-check-label {
   color: #181818;
   font-size: 14px;
 }
 @media screen and (max-width: 1399px) {
-  .modal-common-wrap .modal-body .modal-common-content {
+  .modall-common-wrap .modall-body .modall-common-content {
     padding: 30px 30px;
     width: 538px;
     min-width: 400px;
   }
-  .modal-common-wrap .modal-body .modal-common-content h2 {
+  .modall-common-wrap .modall-body .modall-common-content h2 {
     margin-bottom: 34px;
   }
-  .modal-common-wrap .modal-body .modal-common-content .login-from .cmn-mb {
+  .modall-common-wrap .modall-body .modall-common-content .login-from .cmn-mb {
     margin-bottom: 20px;
   }
-  .modal-common-wrap .modal-body .modal-common-content .login-from .form-grp input {
+  .modall-common-wrap .modall-body .modall-common-content .login-from .form-grp input {
     padding-bottom: 12px;
   }
-  .modal-common-wrap .modal-body .modal-common-content .forgot-inner-area {
+  .modall-common-wrap .modall-body .modall-common-content .forgot-inner-area {
     margin-top: 10px;
   }
-  .modal-common-wrap .modal-body .modal-common-content .forgot-inner-area .checkmark-inner {
+  .modall-common-wrap .modall-body .modall-common-content .forgot-inner-area .checkmark-inner {
     gap: 8px;
   }
-  .modal-common-wrap .modal-body .modal-common-content .orting-badge {
+  .modall-common-wrap .modall-body .modall-common-content .orting-badge {
     margin: 15px 0;
   }
-  .modal-common-wrap .modal-body .modal-common-content .cmn-social {
+  .modall-common-wrap .modall-body .modall-common-content .cmn-social {
     gap: 18px;
     padding: 12px 20px;
   }
-  .modal-common-wrap .from-customradio {
+  .modall-common-wrap .from-customradio {
     margin-top: 12px;
   }
 }
 @media screen and (max-width: 991px) {
-  .modal-common-wrap .modal-body .modal-common-content {
+  .modall-common-wrap .modall-body .modall-common-content {
     padding: 24px 16px;
     width: 538px;
     min-width: 400px;
   }
 }
 @media screen and (max-width: 767px) {
-  .modal-common-wrap .modal-body .modal-common-content {
+  .modall-common-wrap .modall-body .modall-common-content {
     padding: 24px 16px;
     width: 100%;
     min-width: initial;
   }
-  .modal-common-wrap .modal-right-thumb {
+  .modall-common-wrap .modall-right-thumb {
     width: 100%;
   }
-  .modal-common-wrap .modal-right-thumb img {
+  .modall-common-wrap .modall-right-thumb img {
     width: 100%;
   }
 }
 @media screen and (max-width: 400px) {
-  .modal-common-wrap .modal-right-thumb .signlogin-btnwrap {
+  .modall-common-wrap .modall-right-thumb .signlogin-btnwrap {
     gap: 7px;
     flex-wrap: wrap;
     transform: rotate(0deg);

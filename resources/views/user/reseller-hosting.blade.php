@@ -1,98 +1,96 @@
 @extends('layouts.app')
 
 @section('head')
-
 @endsection
 
 @section('content')
-
-        <!-- Hero Section Start -->
-        <section class="hero-section hero-1 style-hosting bg-cover fix" style="background-image: url('assets/img/hero/hero-bg-1.jpg');">
-            <div class="circle-shape-left">
-                <img src="assets/img/hero/hero-1-circle-left.png" alt="shape-img">
-            </div>
-            <div class="circle-shape-right">
-                <img src="assets/img/hero/hero-1-circle-right.png" alt="shape-img">
-            </div>
-            <div class="dot-left">
-                <img src="assets/img/hero/hero-1-dot-left.png" alt="img">
-            </div>
-            <div class="dot-right">
-                <img src="assets/img/hero/hero-1-dot-right.png" alt="img">
-            </div>
-            <div class="container">
-                <div class="row g-4 justify-content-between align-items-center">
-                    <div class="col-lg-6">
-                        <div class="hero-content">
-                            <span class="sub-text-2 wow fadeInUp">
-                                <img src="assets/img/hero/activity.png" alt="img" class="me-2">
-                                Reseller Hosting Plan - 12 months for $29/month
-                            </span>
-                            <h1 class="wow fadeInUp" data-wow-delay=".3s">
-                                Reseller Hosting Windows & Linux
-                            </h1>
-                            <div class="hero-list-items wow fadeInUp" aria-errormessage=".5s">
-                                <ul class="hero-list">
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Lifetime Free Wildcard SLL certificate
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        24/7 Chat, call & Ticket Support
-                                    </li>
-                                </ul>
-                                <ul class="hero-list">
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Free Domain 2 Years Billing
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        30-day money back guarantee
-                                    </li>
-                                </ul>
-                            </div>
-                            <a href="pricing.html" class="theme-btn bg-color-2 wow fadeInUp" data-wow-delay=".7s">
-                                view plan <i class="fas fa-long-arrow-alt-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 wow fadeInUp" data-wow-delay=".4s">
-                        <div class="hero-image">
-                            <img src="assets/img/breadcrumb.png" alt="img">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pricing Section Start -->
-        <section class="pricing-section fix section-padding section-bg">
-            <div class="container">
-                <div class="section-title text-center">
-                    <span class="style-border wow fadeInUp">Pricing Plans</span>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">Get the More Powerful With hostly <br> Reseller Hosting Plans</h2>
-                </div>
-                <div class="row g-0">
-                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                        <div class="affiliate-card-items">
-                            <h6 class="top-text">All Plan Features</h6>
-                            <div class="pricing-header">
-                                <div class="affiliate-img">
-                                    <img src="assets/img/affiliate.png" alt="img">
-                                </div>
-                            </div>
-                            <ul>
-                                @foreach ($affilateFields as $affilateField)
-                                    <li>
-                                        {{ $affilateField->name }}
-                                    </li>
-                                @endforeach
+    <!-- Hero Section Start -->
+    <section class="hero-section hero-1 style-hosting bg-cover fix"
+        style="background-image: url('assets/img/hero/hero-bg-1.jpg');">
+        <div class="circle-shape-left">
+            <img src="assets/img/hero/hero-1-circle-left.png" alt="shape-img">
+        </div>
+        <div class="circle-shape-right">
+            <img src="assets/img/hero/hero-1-circle-right.png" alt="shape-img">
+        </div>
+        <div class="dot-left">
+            <img src="assets/img/hero/hero-1-dot-left.png" alt="img">
+        </div>
+        <div class="dot-right">
+            <img src="assets/img/hero/hero-1-dot-right.png" alt="img">
+        </div>
+        <div class="container">
+            <div class="row g-4 justify-content-between align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <span class="sub-text-2 wow fadeInUp">
+                            <img src="assets/img/hero/activity.png" alt="img" class="me-2">
+                            Reseller Hosting Plan - 12 months for $29/month
+                        </span>
+                        <h1 class="wow fadeInUp" data-wow-delay=".3s">
+                            Reseller Hosting Windows & Linux
+                        </h1>
+                        <div class="hero-list-items wow fadeInUp" aria-errormessage=".5s">
+                            <ul class="hero-list">
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Lifetime Free Wildcard SLL certificate
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    24/7 Chat, call & Ticket Support
+                                </li>
+                            </ul>
+                            <ul class="hero-list">
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Free Domain 2 Years Billing
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    30-day money back guarantee
+                                </li>
                             </ul>
                         </div>
+                        <a href="pricing.html" class="theme-btn bg-color-2 wow fadeInUp" data-wow-delay=".7s">
+                            view plan <i class="fas fa-long-arrow-alt-right"></i>
+                        </a>
                     </div>
-                    @foreach ($affilates as $affilate)
+                </div>
+                <div class="col-lg-3 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="hero-image">
+                        <img src="assets/img/breadcrumb.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section Start -->
+    <section class="affiliate-section fix section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="style-border wow fadeInUp">Ressler plans</span>
+            </div>
+            <div class="row g-0">
+                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                    <div class="affiliate-card-items">
+                        <h6 class="top-text">All Plan Features</h6>
+                        <div class="pricing-header">
+                            <div class="affiliate-img">
+                                <img src="assets/img/affiliate.png" alt="img">
+                            </div>
+                        </div>
+                        <ul>
+                            @foreach ($affilateFields as $affilateField)
+                                <li>
+                                    {{ $affilateField->name }}
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+                @foreach ($affilates as $affilate)
                     <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                         <div class="affiliate-card-items">
                             <h6 class="top-text">{{ $affilate->name }}</h6>
@@ -103,14 +101,16 @@
                                 <p class="text-center">
                                     {{ $affilate->description }}
                                 </p>
-                                <a href="contact.html" class="theme-btn">get Started Now  <i class="fas fa-long-arrow-alt-right"></i>
+                                <a href="contact.html" class="theme-btn">get Started Now <i
+                                        class="fas fa-long-arrow-alt-right"></i>
                                 </a>
                             </div>
                             <ul class="text-center">
                                 @foreach ($affilateFields as $affilateField)
                                     <li>
                                         @if ($affilateField->type == 'checkbox')
-                                            $affilate->fields[$affilateField->id] == 1 ? <i class="fa-regular fa-check"></i> : <i class="fa-regular fa-xmark"></i>
+                                            $affilate->fields[$affilateField->id] == 1 ? <i class="fa-regular fa-check"></i>
+                                            : <i class="fa-regular fa-xmark"></i>
                                         @else
                                             {{ $affilate->fields_rendered[$affilateField->id]['value'] }}
                                         @endif
@@ -119,216 +119,226 @@
                             </ul>
                         </div>
                     </div>
-                    @endforeach
+                @endforeach
+            </div>
+        </div>
+    </section>
+    <!-- Choose Us Section Start -->
+    <section class="choose-us-section fix section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="style-border wow fadeInUp">Features</span>
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">Reseller Hosting Features</h2>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                    <div class="choose-us-card-items">
+                        <div class="icon">
+                            <img src="assets/img/choose/reselling.png" alt="img">
+                        </div>
+                        <div class="content">
+                            <h3>White-Label Reselling</h3>
+                            <p>
+                                Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting
+                                services.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="pricing-title wow fadeInUp" data-wow-delay=".4s">
-                    <p>Cost-effective hosting that delivers secure, reliable performance. </p>
-                    <a href="pricing.html" class="theme-btn">See all plan & details</a>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="choose-us-card-items">
+                        <div class="icon">
+                            <img src="assets/img/choose/speed.png" alt="img">
+                        </div>
+                        <div class="content">
+                            <h3>Lite Speed Web</h3>
+                            <p>
+                                Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting
+                                services.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                    <div class="choose-us-card-items">
+                        <div class="icon">
+                            <img src="assets/img/choose/backups.png" alt="img">
+                        </div>
+                        <div class="content">
+                            <h3>Daily Backups</h3>
+                            <p>
+                                Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting
+                                services.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                    <div class="choose-us-card-items">
+                        <div class="icon">
+                            <img src="assets/img/choose/security.png" alt="img">
+                        </div>
+                        <div class="content">
+                            <h3>Maximum Security</h3>
+                            <p>
+                                Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting
+                                services.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                    <div class="choose-us-card-items">
+                        <div class="icon">
+                            <img src="assets/img/choose/safe-icon.png" alt="img">
+                        </div>
+                        <div class="content">
+                            <h3>Safe and Secured</h3>
+                            <p>
+                                Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting
+                                services.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="choose-us-card-items">
+                        <div class="icon">
+                            <img src="assets/img/choose/bank-icon.png" alt="img">
+                        </div>
+                        <div class="content">
+                            <h3>Money-Back Guarantee</h3>
+                            <p>
+                                Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting
+                                services.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                    <div class="choose-us-card-items">
+                        <div class="icon">
+                            <img src="assets/img/choose/secured-icon.png" alt="img">
+                        </div>
+                        <div class="content">
+                            <h3>Safe and Secured</h3>
+                            <p>
+                                Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting
+                                services.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                    <div class="choose-us-card-items">
+                        <div class="icon">
+                            <img src="assets/img/choose/support-icon.png" alt="img">
+                        </div>
+                        <div class="content">
+                            <h3>Dedicated Support</h3>
+                            <p>
+                                Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting
+                                services.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Choose Us Section Start -->
-        <section class="choose-us-section fix section-padding">
-            <div class="container">
-                <div class="section-title text-center">
-                    <span class="style-border wow fadeInUp">Features</span>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">Reseller Hosting Features</h2>
+    <!-- Cta Contact Section Start -->
+    <section class="cta-contct-section section-padding bg-cover fix"
+        style="background-image: url('assets/img/cta/cta-conact-bg-2.jpg');">
+        <div class="container">
+            <div class="row g-4 justify-content-between align-items-center">
+                <div class="col-lg-8">
+                    <div class="cta-contact-left">
+                        <div class="section-title">
+                            <span class="white-text wow fadeInUp">Contact Us</span>
+                            <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">24/7 Expert Hosting Support <br> Our
+                                Customers Love</h2>
+                        </div>
+                        <div class="cta-contact-button mt-4 mt-md-0">
+                            <a href="https://wa.me/01028887119?text=Hi!%20I'm%20interested%20in%20your%20services%20and%20would%20love%20to%20know%20more%20about%20it.%20Could%20you%20please%20send%20me%20more%20information?%20Thank%20you!" class="theme-btn bg-color-2 wow fadeInUp"
+                                data-wow-delay=".5s">WhatsApp Now <i class="fas fa-long-arrow-alt-right"></i></a>
+                            <h4 class="wow fadeInUp" data-wow-delay=".5s">
+                                <i class="fa-light fa-envelope"></i>
+                                <a href="mailto:info@hostly-eg.com">info@hostly-eg.com</a>
+                            </h4>
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                        <div class="choose-us-card-items">
-                            <div class="icon">
-                                <img src="assets/img/choose/reselling.png" alt="img">
-                            </div>
-                            <div class="content">
-                                <h3>White-Label Reselling</h3>
-                                <p>
-                                    Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                        <div class="choose-us-card-items">
-                            <div class="icon">
-                                <img src="assets/img/choose/speed.png" alt="img">
-                            </div>
-                            <div class="content">
-                                <h3>Lite Speed Web</h3>
-                                <p>
-                                    Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                        <div class="choose-us-card-items">
-                            <div class="icon">
-                                <img src="assets/img/choose/backups.png" alt="img">
-                            </div>
-                            <div class="content">
-                                <h3>Daily Backups</h3>
-                                <p>
-                                    Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                        <div class="choose-us-card-items">
-                            <div class="icon">
-                                <img src="assets/img/choose/security.png" alt="img">
-                            </div>
-                            <div class="content">
-                                <h3>Maximum Security</h3>
-                                <p>
-                                    Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                        <div class="choose-us-card-items">
-                            <div class="icon">
-                                <img src="assets/img/choose/safe-icon.png" alt="img">
-                            </div>
-                            <div class="content">
-                                <h3>Safe and Secured</h3>
-                                <p>
-                                    Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                        <div class="choose-us-card-items">
-                            <div class="icon">
-                                <img src="assets/img/choose/bank-icon.png" alt="img">
-                            </div>
-                            <div class="content">
-                                <h3>Money-Back Guarantee</h3>
-                                <p>
-                                    Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                        <div class="choose-us-card-items">
-                            <div class="icon">
-                                <img src="assets/img/choose/secured-icon.png" alt="img">
-                            </div>
-                            <div class="content">
-                                <h3>Safe and Secured</h3>
-                                <p>
-                                    Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                        <div class="choose-us-card-items">
-                            <div class="icon">
-                                <img src="assets/img/choose/support-icon.png" alt="img">
-                            </div>
-                            <div class="content">
-                                <h3>Dedicated Support</h3>
-                                <p>
-                                    Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.
-                                </p>
-                            </div>
-                        </div>
+                <div class="col-lg-3 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="cta-contact-image mb-0">
+                        <img src="assets/img/cta-man-2.png" alt="img">
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Cta Contact Section Start -->
-        <section class="cta-contct-section section-padding bg-cover fix" style="background-image: url('assets/img/cta/cta-conact-bg-2.jpg');">
-            <div class="container">
-                <div class="row g-4 justify-content-between align-items-center">
-                    <div class="col-lg-8">
-                        <div class="cta-contact-left">
+    <!-- Faq Section Start -->
+    <section class="faq-section fix section-padding">
+        <div class="container">
+            <div class="faq-wrapper">
+                <div class="row g-4">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="faq-image">
+                            <img src="assets/img/faq.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="faq-content">
                             <div class="section-title">
-                                <span class="white-text wow fadeInUp">Contact Us</span>
-                                <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">24/7 Expert Hosting Support <br> Our Customers Love</h2>
+                                <span class="wow fadeInUp">FAQ’S</span>
+                                <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                                    Prioritize Your Site’s Safety and Security
+                                </h2>
                             </div>
-                            <div class="cta-contact-button mt-4 mt-md-0">
-                                <a href="contact.html" class="theme-btn bg-color-2 wow fadeInUp" data-wow-delay=".5s">WhatsApp Now <i class="fas fa-long-arrow-alt-right"></i></a>
-                                <h4 class="wow fadeInUp" data-wow-delay=".5s">
-                                    <i class="fa-light fa-envelope"></i>
-                                    <a href="mailto:info@hostly-eg.com">info@hostly-eg.com</a>
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 wow fadeInUp" data-wow-delay=".4s">
-                        <div class="cta-contact-image mb-0">
-                            <img src="assets/img/cta-man-2.png" alt="img">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Faq Section Start -->
-        <section class="faq-section fix section-padding">
-            <div class="container">
-                <div class="faq-wrapper">
-                    <div class="row g-4">
-                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                            <div class="faq-image">
-                                <img src="assets/img/faq.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="faq-content">
-                                <div class="section-title">
-                                    <span class="wow fadeInUp">FAQ’S</span>
-                                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                                        Prioritize Your Site’s Safety and Security
-                                    </h2>
-                                </div>
-                                <div class="faq-accordion mt-4 mt-md-0">
-                                    <div class="accordion" id="accordion">
-                                        @foreach ($faqs as $faq)
-                                        <div class="accordion-item wow fadeInUp" data-wow-delay="{{$loop->index * 0.3}}s">
+                            <div class="faq-accordion mt-4 mt-md-0">
+                                <div class="accordion" id="accordion">
+                                    @foreach ($faqs as $faq)
+                                        <div class="accordion-item wow fadeInUp"
+                                            data-wow-delay="{{ $loop->index * 0.3 }}s">
                                             <h5 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq{{$loop->index}}" aria-expanded="true" aria-controls="faq{{$loop->index}}">
-                                                    {{$faq->question}}
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#faq{{ $loop->index }}"
+                                                    aria-expanded="true" aria-controls="faq{{ $loop->index }}">
+                                                    {{ $faq->question }}
                                                 </button>
                                             </h5>
-                                            <div id="faq{{$loop->index}}" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                            <div id="faq{{ $loop->index }}" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordion">
                                                 <div class="accordion-body">
-                                                    {{$faq->answer}}
+                                                    {{ $faq->answer }}
                                                 </div>
                                             </div>
                                         </div>
-                                        @endforeach
-                                    </div>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Testimonial Section Start -->
-        <section class="testimonial-section-2 fix section-padding section-bg">
-            <div class="container">
-                <div class="section-title text-center">
-                    <span class="style-bg wow fadeInUp">clients Testimonials</span>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">Latest Client Feedback</h2>
-                </div>
-                <div class="swiper testimonial-slider">
-                    <div class="swiper-wrapper">
-                        @foreach ($testmonials as $testmonial)
+    <!-- Testimonial Section Start -->
+    <section class="testimonial-section-2 fix section-padding section-bg">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="style-bg wow fadeInUp">clients Testimonials</span>
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">Latest Client Feedback</h2>
+            </div>
+            <div class="swiper testimonial-slider">
+                <div class="swiper-wrapper">
+                    @foreach ($testmonials as $testmonial)
                         <div class="swiper-slide">
                             <div class="testimonial-box-items">
                                 <div class="pngwing-shape">
-                                    <img src="assets/img/testimonial/pngwing-shape.png" alt="{{$testmonial->name}}">
+                                    <img src="assets/img/testimonial/pngwing-shape.png" alt="{{ $testmonial->name }}">
                                 </div>
                                 <div class="star">
                                     @for ($i = 0; $i < $testmonial->rating; $i++)
@@ -339,14 +349,15 @@
                                     @endfor
                                 </div>
                                 <p>
-                                    {{$testmonial->testmonial}}
+                                    {{ $testmonial->testmonial }}
                                 </p>
                                 <div class="client-info">
                                     <div class="client-img bg-cover"
-                                        style="background-image: url('{{asset(route('client_testmonial_image', str_replace('client-testmonial/', '', $testmonial->image)))}}');"></div>
+                                        style="background-image: url('{{ asset(route('client_testmonial_image', str_replace('client-testmonial/', '', $testmonial->image))) }}');">
+                                    </div>
                                     <div class="content">
-                                        <h4>{{$testmonial->name}}</h4>
-                                        <span>{{$testmonial->job_title}}</span>
+                                        <h4>{{ $testmonial->name }}</h4>
+                                        <span>{{ $testmonial->job_title }}</span>
                                     </div>
                                     <div class="icon">
                                         <i class="fa-solid fa-quote-right"></i>
@@ -355,17 +366,15 @@
                             </div>
                         </div>
                     @endforeach
-                    </div>
-                    <div class="swiper-dot mt-5">
-                        <div class="dot"></div>
-                    </div>
+                </div>
+                <div class="swiper-dot mt-5">
+                    <div class="dot"></div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Brand Section Start -->
-    
-
+    <!-- Brand Section Start -->
 @endsection
 @section('script')
 @endsection

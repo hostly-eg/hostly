@@ -11,9 +11,9 @@ use Illuminate\Http\Request;
 
 class Profile extends Controller
 {
-    public function index($token)
+    public function index()
     {
-        $user = User::with('customer')->where('token', $token)->first();
+        $user = auth()->user();
         $orders = Order::with('plan','domain_plan','vps_plan','vps_subscription','domain_subscription','subscription')
             ->where('customer_id', $user->customer->id)->get();
 

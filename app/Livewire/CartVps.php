@@ -148,7 +148,7 @@ class CartVps extends Component
 
             session()->flash('message', 'Data stored successfully!');
 //            $this->emit('formSubmitted');
-            return redirect(route('profile',auth()->user()->token));
+            return redirect(route('profile'));
 
         } catch (\Exception $e) {
             $this->addError('form', 'An unexpected error occurred.');

@@ -195,7 +195,7 @@
                             <input type="file" id="imageUpload" accept="image/*" wire:model="imageUpload" class="file-input" required/>
                         </label>
                         <div class="preview-container">
-                            <img src="{{ $imageUpload ? $imageUpload->temporaryUrl() : asset('placeholder.png') }}" style=" width: 100%;height: 100%;object-fit: cover;" alt="transaction screen">
+                            <img src="{{ $imageUpload ? $imageUpload->temporaryUrl() : asset('placeholder.png') }}" style=" width: 100%;height: 100%;object-fit: cover;" >
                         </div>
                         @error('imageUpload') <span class="alert alert-danger">{{ $message }}</span> @enderror
                     </div>

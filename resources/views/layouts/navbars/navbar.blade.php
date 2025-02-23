@@ -86,7 +86,7 @@
 <div class="offcanvas__overlay"></div>
 
 <!-- Modal Version 1 -->
-<div class="modal modal-common-wrap fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+{{-- <div class="modal modal-common-wrap fade" id="exampleModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content">
             <div class="modal-header">
@@ -264,7 +264,7 @@
         </div>
     </div>
 </div>
-
+ --}}
 <!-- Search Area Start -->
 <div class="search-wrap">
     <div class="search-inner">
@@ -296,16 +296,23 @@
                 </ul>
                 <p>Hostech Flash Discount: {!! request()->attributes->get('offers_header') !!}</p>
                 <ul class="list">
-
+@if(auth()->user())
+                        <li><i class="fa-light fa-user"></i>
+                            <a href="{{route('profile')}}">Profile</a>
+                        </li>
+                        @endif
                     <li>
                         @if (auth()->user())
                             <i class="fa-light fa-sign-out"></i>
                             <a href="{{ route('logout') }}">Logout</a>
                         @else
                             <i class="fa-light fa-sign-in"></i>
-                            <button class="exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Login
-                            </button>
+                            <a href="{{ route('login') }}">
+
+                                <button class="exampleModal">
+                                    Login
+                                </button>
+                            </a>
                         @endif
                     </li>
                 </ul>

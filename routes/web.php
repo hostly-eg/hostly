@@ -121,7 +121,7 @@ Route::group(['middleware' => 'admin'], function () {
 });
 Route::group(['middleware' => 'auth'], function () {
     Route::get('logout', [SessionsController::class, 'destroy'])->name('logout');
-    Route::get('/profile\{token}', [Profile::class, 'index'])->name('profile');
+    Route::get('/profile/', [Profile::class, 'index'])->name('profile');
     Route::get('/cart{plan_id}-{subs_id}', [Cart::class, 'index'])->name('cart');
     Route::post('/check-domain', [DomainController::class, 'checkDomain'])->name('check_domain');
     Route::get('/domain_cart{plan_id}{subs_id}-{dom}', [DomainController::class, 'index'])->name('domain_cart');
@@ -131,6 +131,9 @@ Route::group(['middleware' => 'auth'], function () {
 Route::get('/login', function () {
     return view('user.login');
 })->name('login');
+Route::get('/register', function () {
+    return view('user.register');
+})->name('register');
 Route::post('/session', [SessionsController::class, 'store'])->name('sign_in');
 Route::post('/register', [RegisterController::class, 'store'])->name('sign_up');
 Route::get('/', [Home::class, 'index'])->name('home');
