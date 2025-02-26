@@ -7,7 +7,7 @@
                     <div class="single-footer-widget">
                         <div class="widget-head">
                             <a href="/">
-                                <img src="assets/img/logo/white-logo.svg" alt="logo-img">
+                                <img class="col-12" src="assets/img/logo/white-logo.png" alt="logo-img">
                             </a>
                         </div>
                         <div class="footer-content">

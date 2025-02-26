@@ -105,7 +105,7 @@
                 <div class="row g-4 justify-content-between align-items-center">
                     <div class="col-lg-5 wow fadeInUp" data-wow-delay=".3s">
                         <div class="feature-hosting-image">
-                            <img src="assets/img/hosting-boy.png" alt="img">
+                            <img src="assets/img/hosting-boy.jpeg" alt="img">
                         </div>
                     </div>
                     <div class="col-lg-6">
