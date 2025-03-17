@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use App\Mail\OrderMail;
+use App\Mail\NewOrderNotificationMail;
 use Illuminate\Support\Facades\Log;
 use App\Models\Coupon;
 use App\Models\Order;
@@ -148,7 +149,13 @@ class Cart extends Component
             } catch (\Exception $e) {
                 Log::error('Error sending email: ' . $e->getMessage());
             }
-
+            try {
+                if(env('ADMIN_EMAIL')){
+                    Mail::to(env('ADMIN_EMAIL'))->send(new NewOrderNotificationMail($user, $order));
+                }
+            } catch (\Exception $e) {
+                Log::error('Error sending email: ' . $e->getMessage());
+            }
             session()->flash('message', 'Data stored successfully!');
 //            $this->emit('formSubmitted');
             return redirect(route('profile'));
