@@ -12,7 +12,7 @@
                         </div>
                         <div class="footer-content">
                             <p>
-                                Nullam interdum libero vitae pretium aliquam donec nibh purus laoreet in ullamcorper vel malesuada.
+                                We provide reliable and easy-to-use hosting solutions, with high performance and advanced security to ensure the best experience for your site.  unlimited data transfer, and technical support available around the clock.
                             </p>
                             <h4 class="payment-text">Payment Method</h4>
                             <ul class="brand-logo">

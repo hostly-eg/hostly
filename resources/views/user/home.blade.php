@@ -73,11 +73,7 @@
                     @csrf
                     <div class="doming-input">
                         <input type="text" placeholder="domain.com" name="domain">
-                        <button class="theme-btn bg-color-2"
-                            @if (auth()->user()) type="submit"
-                            @else
-                                type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" @endif>Search
-                            Now</button>
+                        <button class="theme-btn bg-color-2"    type="submit">Search Now</button>
                     </div>
                 </form>
                 <ul class="doming-list">
@@ -132,58 +128,58 @@
                     <span class="style-bg wow fadeInUp">Premium Feature</span>
                     <h2 class="wow fadeInUp" data-wow-delay=".3s">Discover all Our Web <br> Hosting Services</h2>
                 </div>
-                <a href="pricing.html" class="theme-btn wow fadeInUp" data-wow-delay=".5s">see all Feature <i
+                <a href="{{route('pricing')}}" class="theme-btn wow fadeInUp" data-wow-delay=".5s">see all Feature <i
                         class="fas fa-long-arrow-alt-right"></i></a>
             </div>
             <div class="row">
-                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                    <div class="hosting-box-items">
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"  data-wow-delay=".2s">
+                    <div class="hosting-box-items" style="height:350px">
                         <div class="icon">
                             <img src="assets/img/hosting/icon-4.png" alt="img">
                         </div>
                         <div class="content">
                             <h3><a href="{{ route("coming_soon") }}">Cloud Hosting</a></h3>
-                            <p>Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting
-                                services.</p>
+                            <p>
+                            If you are looking to take your business site to new heights , cloud hosting is the right choice 
+It offers greater stability , faster performance and better security
+                            </p>
                             
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                    <div class="hosting-box-items">
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"  data-wow-delay=".4s">
+                    <div class="hosting-box-items" style="height:350px">
                         <div class="icon">
                             <img src="assets/img/hosting/icon-5.png" alt="img">
                         </div>
                         <div class="content">
                             <h3><a href="{{ route("coming_soon") }}">Reseller Hosting</a></h3>
-                            <p>Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting
-                                services.</p>
+                            <p>Allows  you to  provide  web  hosting  services  without the  infrastructure  and  management  overhead  .</p>
                         
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                    <div class="hosting-box-items">
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"  data-wow-delay=".6s">
+                    <div class="hosting-box-items" style="height:350px">
                         <div class="icon">
                             <img src="assets/img/hosting/icon-7.png" alt="img">
                         </div>
                         <div class="content">
                             <h3><a href="{{ route("share_hosting") }}">Web Hosting</a></h3>
-                            <p>Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting
-                                services.</p>
+                            <p>Perfect for blogs, small business websites, and portfolio sites 
+It's budget-friendly, easy setup, high uptime, and 24/7 support .</p>
                             
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                    <div class="hosting-box-items">
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"  data-wow-delay=".8s">
+                    <div class="hosting-box-items" style="height:350px">
                         <div class="icon">
                             <img src="assets/img/hosting/icon-8.png" alt="img">
                         </div>
                         <div class="content">
                             <h3><a href="domain.html">Domain Name</a></h3>
-                            <p>Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting
-                                services.</p>
+                            <p>We used to establish a unique identity using domain name , secure the perfect domain for your brand with our domain registration services</p>
                             
                         </div>
                     </div>
@@ -540,9 +536,9 @@
                                 </div>
                                 <div class="content">
                                     <h4>Turbo Hosting</h4>
-                                    <p>Cursus libero sit amet ultrices. Nullam sit amet ornare neque duis vitae congue ante,
-                                        nec tempus quam. Donec
-                                        non.</p>
+                                    <p>If  you  need  blazing-fast  website  performance 
+Turbo hosting  ensures your  visitors  enjoy  unmatched  speed  and performance  
+.</p>
                                 </div>
                             </div>
                             <div class="hosting-items wow fadeInUp" data-wow-delay=".7s">
@@ -551,8 +547,8 @@
                                 </div>
                                 <div class="content">
                                     <h4>Share Hosting</h4>
-                                    <p>Cursus libero sit amet ultrices. Nullam sit amet ornare neque duis vitae congue ante,
-                                        nec tempus quam. Donec non.</p>
+                                    <p>Perfect for blogs, small business websites, and portfolio sites 
+It's budget-friendly, easy setup, high uptime, and 24/7 support . </p>
                                 </div>
                             </div>
                             <div class="hosting-items wow fadeInUp" data-wow-delay=".9s">
@@ -561,8 +557,9 @@
                                 </div>
                                 <div class="content">
                                     <h4>Dedicated Hosting</h4>
-                                    <p>Cursus libero sit amet ultrices. Nullam sit amet ornare neque duis vitae congue ante,
-                                        nec tempus quam. Donec non.</p>
+                                    <p>If you use dedicated service  offers  the benefits of high  performance , security , email  stability  and  control 
+It's perfect  for  large  businesses , eCommerce  stores ,  and  resource-intensive  applications 
+</p>
                                 </div>
                             </div>
                         </div>
@@ -654,15 +651,14 @@
             </div>
             <div class="row">
                 <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                    <div class="choose-us-card-items">
+                    <div class="choose-us-card-items"style="height:350px">
                         <div class="icon">
                             <img src="assets/img/choose/safe-icon.png" alt="img">
                         </div>
                         <div class="content">
                             <h3>Safe and Secured</h3>
                             <p>
-                                Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting
-                                services.
+                               We put your security and privacy at the top of our priorities, so our site provides a safe environment that guarantees you a smooth and risk-free browsing experience
                             </p>
                         </div>
                     </div>
@@ -675,23 +671,19 @@
                         <div class="content">
                             <h3>Money-Back Guarantee</h3>
                             <p>
-                                Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting
-                                services.
-                            </p>
+We believe in the quality of our services and products, which is why we offer a money-back guarantee. If you're not satisfied for any reason, you can get a full refund, ensuring a risk-free experience.                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                    <div class="choose-us-card-items">
+                    <div class="choose-us-card-items"style="height:350px">
                         <div class="icon">
                             <img src="assets/img/choose/secured-icon.png" alt="img">
                         </div>
                         <div class="content">
-                            <h3>Safe and Secured</h3>
+                            <h3>Cost optimization</h3>
                             <p>
-                                Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting
-                                services.
-                            </p>
+Smart solutions ensure the highest quality at the lowest cost, with strategic planning to reduce expenses and maximize your business value.                            </p>
                         </div>
                     </div>
                 </div>
@@ -703,8 +695,7 @@
                         <div class="content">
                             <h3>Dedicated Support</h3>
                             <p>
-                                Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting
-                                services.
+                                We believe that the perfect user experience starts with a strong support service and is always available. That's why we provide you with customized technical support to help you with any query or problem you may face
                             </p>
                         </div>
                     </div>
@@ -730,9 +721,7 @@
                                 <h2 class="wow fadeInUp" data-wow-delay=".3s">Enhanced Security Capabilities</h2>
                             </div>
                             <p class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                                Till, having your own dedicated physical computer at a center does improve your security
-                                because you have a reduced risk of experiencing security breaches from other sites that you
-                                would normally share hardware with. However,
+                                We understand the importance of security in today's digital environment, so we provide advanced security capabilities to ensure that your data and personal information are protected to the highest standards by using :
                             </p>
                             <div class="feature-list">
                                 <ul class="wow fadeInUp" data-wow-delay=".3s">

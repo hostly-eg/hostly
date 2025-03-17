@@ -60,8 +60,8 @@
                                 <h2 class="wow fadeInUp" data-wow-delay=".3s">Choose a Website Hosting Partner Right Now.</h2>
                             </div>
                             <p class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                                There are many variations of passages of Lorem Ipsum available, but the majority have  suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                            </p>
+                                        Make your site run at maximum efficiency with fast and secure hosting services that guarantee a smooth user experience and integrated protection. We provide a robust infrastructure that supports your needs and gives you peace of mind
+                                </p>
                             <div class="about-counter-items">
                                 <div class="counter-items wow fadeInUp" data-wow-delay=".3s">
                                     <h2><span class="count">50</span>k</h2>
@@ -105,8 +105,7 @@
                                 <h2 class="wow fadeInUp" data-wow-delay=".3s">Advance features for the <br> advanced user</h2>
                             </div>
                             <p class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                                Pellentesque varius mauris sit amet nisi tincidunt finibus Donec faucibus diam quis feugiat accumsan Integer molestie sapien ut ipsum fermentum feugiat Curabitur.
-                            </p>
+ We offer you advanced hosting features designed specifically to meet the needs of professionals and high-performing website owners. Enjoy integrated solutions that help you grow your business while ensuring round-the-clock security and stability                            </p>
                             <div class="list-items">
                                 <ul class="wow fadeInUp" data-wow-delay=".3s">
                                     <li>
@@ -156,7 +155,7 @@
             <div class="section-title text-center">
                 <span class="style-border wow fadeInUp">Our Expart</span>
                 <h2 class="mb-3 wow fadeInUp" data-wow-delay=".3s">Our expert team</h2>
-                <p class="wow fadeInUp" data-wow-delay=".5s">Aliquam viverra accumsan lectus in dignissim ante interdum eu Sed odio massa</p>
+                <p class="wow fadeInUp" data-wow-delay=".5s"> A group of professionals committed to providing innovative solutions and high quality services to ensure your success</p>
             </div>
             <div class="row">
             @foreach ($members as $member)
@@ -183,7 +182,7 @@
             <div class="section-title text-center">
                 <span class="style-border-white text-white wow fadeInUp">Why choose uS</span>
                 <h2 class="mb-3 text-white wow fadeInUp" data-wow-delay=".3s">Why Choose hostly</h2>
-                <p class="text-white wow fadeInUp" data-wow-delay=".5s">Aliquam viverra accumsan lectus in dignissim ante interdum eu Sed odio massa </p>
+                <p class="text-white wow fadeInUp" data-wow-delay=".5s">with hostly you can find the perfect domain for your site quickly and without any complications</p>
             </div>
             <div class="choose-us-top-inner style-2">
                 <ul>
@@ -202,7 +201,7 @@
                         <div class="content">
                             <h3>Bay a Domain</h3>
                             <p>
-                                Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.
+                                with hostly you can find the perfect domain for your site quickly and without any complications
                             </p>
                         </div>
                     </div>
@@ -215,7 +214,7 @@
                         <div class="content">
                             <h3>Find the Right Hosting</h3>
                             <p>
-                                Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.
+                                with us, you will find the ideal hosting that gives your site the strength and reliability it needs to succeed
                             </p>
                         </div>
                     </div>
@@ -228,7 +227,7 @@
                         <div class="content">
                             <h3>Add Professional Email</h3>
                             <p>
-                                Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.
+                                Ease of setting up email and linking it to your website domain, and advanced security to protect against electronic fraud and viruses
                             </p>
                         </div>
                     </div>
@@ -241,7 +240,7 @@
                         <div class="content">
                             <h3>Boost Performance</h3>
                             <p>
-                                Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.
+                                With our solutions, your website will work efficiently and quickly, enhancing the user experience and helping you achieve greater success.
                             </p>
                         </div>
                     </div>
@@ -256,7 +255,7 @@
             <div class="section-title text-center">
                 <span class="style-border wow fadeInUp">Testimonials</span>
                 <h2 class="mb-3 wow fadeInUp" data-wow-delay=".3s">Impressions & Feedback</h2>
-                <p class="wow fadeInUp" data-wow-delay=".5s">Aliquam viverra accumsan lectus in dignissim ante interdum eu Sed odio massa </p>
+                <p class="wow fadeInUp" data-wow-delay=".5s">We appreciate your opinion! Check out our customers' experiences and join them in sharing your feedback to continuously improve our services </p>
             </div>
             <div class="swiper testimonial-slider">
                 <div class="swiper-wrapper">

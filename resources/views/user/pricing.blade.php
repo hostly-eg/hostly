@@ -33,77 +33,74 @@
         </div>
 
         <!-- Choose Us Section Start -->
-        <section class="choose-us-section fix section-padding">
-            <div class="container">
-                <div class="section-title text-center">
-                    <span class="style-bg wow fadeInUp">Why Choose Us</span>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">Why Choose hostly</h2>
+   <section class="choose-us-section my-5">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="style-bg wow fadeInUp">Why Choose Us</span>
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">Why Choose hostly</h2>
+            </div>
+            <div class="choose-us-top-inner">
+                <ul>
+                    <li class="wow fadeInUp" data-wow-delay=".2s">Step One</li>
+                    <li class="wow fadeInUp" data-wow-delay=".4s">Step Two</li>
+                    <li class="wow fadeInUp" data-wow-delay=".6s">Step Three</li>
+                    <li class="wow fadeInUp" data-wow-delay=".8s">Step Four</li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                    <div class="choose-us-card-items"style="height:350px">
+                        <div class="icon">
+                            <img src="assets/img/choose/safe-icon.png" alt="img">
+                        </div>
+                        <div class="content">
+                            <h3>Safe and Secured</h3>
+                            <p>
+                               We put your security and privacy at the top of our priorities, so our site provides a safe environment that guarantees you a smooth and risk-free browsing experience
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="choose-us-top-inner">
-                    <ul>
-                        <li class="wow fadeInUp" data-wow-delay=".2s">Step One</li>
-                        <li class="wow fadeInUp" data-wow-delay=".4s">Step Two</li>
-                        <li class="wow fadeInUp" data-wow-delay=".6s">Step Three</li>
-                        <li class="wow fadeInUp" data-wow-delay=".8s">Step Four</li>
-                    </ul>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="choose-us-card-items">
+                        <div class="icon">
+                            <img src="assets/img/choose/bank-icon.png" alt="img">
+                        </div>
+                        <div class="content">
+                            <h3>Money-Back Guarantee</h3>
+                            <p>
+We believe in the quality of our services and products, which is why we offer a money-back guarantee. If you're not satisfied for any reason, you can get a full refund, ensuring a risk-free experience.                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                        <div class="choose-us-card-items">
-                            <div class="icon">
-                                <img src="assets/img/choose/safe-icon.png" alt="img">
-                            </div>
-                            <div class="content">
-                                <h3>Safe and Secured</h3>
-                                <p>
-                                    Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.
-                                </p>
-                            </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                    <div class="choose-us-card-items"style="height:350px">
+                        <div class="icon">
+                            <img src="assets/img/choose/secured-icon.png" alt="img">
+                        </div>
+                        <div class="content">
+                            <h3>Cost optimization</h3>
+                            <p>
+Smart solutions ensure the highest quality at the lowest cost, with strategic planning to reduce expenses and maximize your business value.                            </p>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                        <div class="choose-us-card-items">
-                            <div class="icon">
-                                <img src="assets/img/choose/bank-icon.png" alt="img">
-                            </div>
-                            <div class="content">
-                                <h3>Money-Back Guarantee</h3>
-                                <p>
-                                    Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.
-                                </p>
-                            </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                    <div class="choose-us-card-items">
+                        <div class="icon">
+                            <img src="assets/img/choose/support-icon.png" alt="img">
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                        <div class="choose-us-card-items">
-                            <div class="icon">
-                                <img src="assets/img/choose/secured-icon.png" alt="img">
-                            </div>
-                            <div class="content">
-                                <h3>Safe and Secured</h3>
-                                <p>
-                                    Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                        <div class="choose-us-card-items">
-                            <div class="icon">
-                                <img src="assets/img/choose/support-icon.png" alt="img">
-                            </div>
-                            <div class="content">
-                                <h3>Dedicated Support</h3>
-                                <p>
-                                    Collaboratively formulate principle capital. Progressively evolve user revolutionary hosting services.
-                                </p>
-                            </div>
+                        <div class="content">
+                            <h3>Dedicated Support</h3>
+                            <p>
+                                We believe that the perfect user experience starts with a strong support service and is always available. That's why we provide you with customized technical support to help you with any query or problem you may face
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
+        </div>
+    </section>
         <!-- Pricing Section Start -->
         <section class="pricing-section fix section-padding section-bg">
             <div class="pricing-shape">

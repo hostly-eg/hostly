@@ -16,8 +16,7 @@
                     </div>
                 </div>
                 <p class="text d-none d-xl-block">
-                    Nullam dignissim, ante scelerisque the is euismod fermentum odio sem semper the is erat, a feugiat
-                    leo urna eget eros. Duis Aenean a imperdiet risus.
+                  We provide reliable and easy-to-use hosting solutions, with high performance and advanced security to ensure the best experience for your site. Thanks to our services, you can enjoy super fast speed, unlimited data transfer, and technical support available around the clock.
                 </p>
                 <div class="mobile-menu fix mb-3"></div>
                 <div class="offcanvas__contact">
@@ -294,7 +293,7 @@
                         <a href="tel:+20866660112">+201028887119</a>
                     </li>
                 </ul>
-                <p>Hostech Flash Discount: {!! request()->attributes->get('offers_header') !!}</p>
+                <p>hostly-eg Flash Discount: {!! request()->attributes->get('offers_header') !!}</p>
                 <ul class="list">
 @if(auth()->user())
                         <li><i class="fa-light fa-user"></i>
@@ -432,7 +431,7 @@
                                                                         <h6><a href="{{ route('about') }}">About
                                                                                 Us</a></h6>
                                                                         <p>
-                                                                            About hostech
+                                                                            About hostly-eg
                                                                         </p>
                                                                     </div>
                                                                 </div>
@@ -610,7 +609,7 @@
                                                                         <h6><a href="{{ route('share_hosting') }}">Share
                                                                                 Hosting</a></h6>
                                                                         <p>
-                                                                            About hostech
+                                                                            About hostly-eg
                                                                         </p>
                                                                     </div>
                                                                 </div>

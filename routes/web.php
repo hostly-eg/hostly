@@ -123,11 +123,11 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('logout', [SessionsController::class, 'destroy'])->name('logout');
     Route::get('/profile/', [Profile::class, 'index'])->name('profile');
     Route::get('/cart{plan_id}-{subs_id}', [Cart::class, 'index'])->name('cart');
-    Route::post('/check-domain', [DomainController::class, 'checkDomain'])->name('check_domain');
     Route::get('/domain_cart{plan_id}{subs_id}-{dom}', [DomainController::class, 'index'])->name('domain_cart');
     Route::get('/cart_vps{plan_id}{subs_id}', [Cart::class, 'vps'])->name('cart_vps');
     Route::put('/customer-update_dns{subs_id}', [Profile::class, 'update_dns'])->name('update_dns');
 });
+Route::post('/check-domain', [DomainController::class, 'checkDomain'])->name('check_domain');
 Route::get('/login', function () {
     return view('user.login');
 })->name('login');
@@ -150,7 +150,7 @@ Route::get('/about', function () {
     return view('user.about',compact('members','testmonials'));
 })->name('about');
 Route::get('/affiliate', function () {
-    $affilates = \App\Models\Affilate::all();
+    $affilates = \App\Models\affilate::all();
     $affilateFields = \App\Models\AffilateField::all();
     $faqs = Faq::all();
     return view('user.affiliate',compact('affilates','affilateFields','faqs'));
